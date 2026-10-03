@@ -1,67 +1,92 @@
 <!doctype html>
-<html lang="{{lang}}" data-page="site">
+<html lang="it" data-page="site">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>{{meta.title}}</title>
-  <meta name="description" content="{{meta.description}}">
+  <title>Bagno Marè | Spiaggia e cucina di mare a Cesenatico</title>
+  <meta name="description" content="Bagno Marè, Molo di Levante 74 a Cesenatico. Spiaggia, colazione dal nostro forno, pranzo e cena di mare. Prenota il tuo tavolo online.">
   <meta name="theme-color" content="#edf2f4" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#1c1d2b" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="{{meta.og_locale}}">
+  <meta property="og:locale" content="it_IT">
   <meta property="og:site_name" content="Bagno Marè">
-  <meta property="og:title" content="{{meta.og_title}}">
-  <meta property="og:description" content="{{meta.og_description}}">
-  <meta property="og:url" content="__ORIGIN__{{prefix}}">
-  <link rel="canonical" href="__ORIGIN__{{prefix}}">
-{{{alternates}}}
+  <meta property="og:title" content="Bagno Marè | Cesenatico">
+  <meta property="og:description" content="Spiaggia di Levante, cucina di mare, la sera sul molo.">
+  <meta property="og:url" content="__ORIGIN__/">
+  <link rel="canonical" href="__ORIGIN__/">
+  <link rel="alternate" hreflang="it" href="__ORIGIN__/">
+  <link rel="alternate" hreflang="en" href="__ORIGIN__/en/">
+  <link rel="alternate" hreflang="de" href="__ORIGIN__/de/">
+  <link rel="alternate" hreflang="x-default" href="__ORIGIN__/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..600&family=Jost:wght@300..600&display=swap">
-  <link rel="stylesheet" href="/styles.css?v={{v.styles}}">
+  <link rel="stylesheet" href="/styles.css?v=aa09e8a456">
   <link rel="preload" as="image" href="/assets/MARE_180619_044-scaled-374x561.jpg">
-  <script src="/boot.js?v={{v.boot}}"></script>
-  <script src="/app.js?v={{v.app}}" defer></script>
+  <script src="/boot.js?v=69bcdc6d53"></script>
+  <script src="/app.js?v=9c65226bb7" defer></script>
   <!--structured-data-->
-  <script type="application/json" id="i18n">{{{js_json}}}</script>
+  <script type="application/json" id="i18n">{"locale":"it-IT","theme_to_light":"Passa al tema chiaro","theme_to_dark":"Passa al tema scuro","copy":"Copia","copied":"Copiato","copy_done":"Copiato negli appunti","copy_fail":"Copia non riuscita: seleziona il testo a mano.","network_error":"Connessione non riuscita. Controlla la rete e riprova.","request_failed":"La richiesta non è riuscita. Riprova tra poco.","weather":{"clear":"sereno","clear_night":"cielo limpido","mostly_clear":"quasi sereno","partly_cloudy":"poco nuvoloso","cloudy":"nuvoloso","fog":"nebbia","drizzle":"pioviggine","rain":"pioggia","snow":"neve","showers":"rovesci","storm":"temporale","sea":"mare {t}°","title":"Meteo attuale a Cesenatico"},"search":{"suggestions":"Suggerimenti","results_one":"1 risultato","results_many":"{n} risultati","empty":"Nessun risultato per “{q}”. Prova con un’altra parola, oppure scrivici a info@mareconlaccento.it.","items":[{"title":"Prenotare un tavolo","section":"Prenota","action":"booking"},{"title":"Orari e stagione","section":"Contatti","href":"#orari"},{"title":"La carta e i menu in PDF","section":"Cucina","href":"#cucina"},{"title":"Allergie e intolleranze","section":"Domande","href":"#faq"},{"title":"Come arrivare","section":"Contatti","href":"#contatti"}]},"status":{"open_kitchen":"Aperto oggi · cucina fino alle {time}","open_beach":"Aperto oggi · spiaggia fino alle {time}","closed_today":"Chiuso oggi · riapriamo {when}","closed_now":"Chiuso ora · riapriamo {when}","closed_season":"Chiuso · ci vediamo la prossima stagione","tomorrow":"domani","on_weekday":"{weekday}","on_date":"il {date}"},"hours":{"range":"{a}–{b}","not_offered":"Non disponibile","restaurant_season":"Ristorante dal {start} al {end}.","beach_season":"Spiaggia dal {start} al {end}.","weekly":"Giorno di riposo: {days}.","offseason":"Fuori stagione siamo aperti {days}, {services}.","offseason_none":"Fuori stagione il ristorante è chiuso.","services_both":"a pranzo e a cena","services_pranzo":"solo a pranzo","services_cena":"solo a cena","closures":"Chiusure in programma: {list}.","closure_tutto":"{date}","closure_pranzo":"{date} a pranzo","closure_cena":"{date} a cena","and":" e ","day_season":"Stagione {year}: dal {start} al {end}."},"booking":{"from":"dalle {time}","lunch":"Pranzo","dinner":"Cena","service_lunch":"il pranzo","service_dinner":"la cena","day_missing":"giorno da scegliere","time_missing":"orario da scegliere","guest_one":"{n} persona","guest_many":"{n} persone","today":"Oggi, {date}","closed_label":"{date}, chiuso","closed_tag":"Chiuso","time_hint":"Scegli un giorno per vedere gli orari.","guests_hint":"Oltre {max} persone? Scrivici, organizziamo noi.","slot_full":"Completo","slot_max":"Max {n} pers.","slot_last":"Ultimi posti","slot_free":"Libero","not_configured_title":"Prenotazioni online non ancora aperte.","not_configured_text":"Per {service} chiamaci al {phone}.","out_of_range_title":"Data troppo lontana.","out_of_range_text":"Questo giorno non è ancora prenotabile online.","past_title":"Servizio concluso.","past_text":"Per oggi gli orari sono passati. Scegli un altro giorno.","closed_title":"Siamo chiusi.","closed_lunch":"{date} siamo chiusi a pranzo.","closed_dinner":"{date} siamo chiusi a cena.","closed_next":"Il primo giorno disponibile è {date}.","closed_pick":"Scegli {date}","closed_none":"Al momento non ci sono altri giorni prenotabili online per questo servizio.","full":"Per {service} di questo giorno è tutto prenotato{for}. Prova l’altro servizio o un altro giorno.","full_for":" per {n} persone","unavailable_title":"Orari non disponibili.","retry":"Riprova","err_date":"Scegli un giorno dal calendario.","err_time":"Scegli uno degli orari disponibili.","err_time_no_date":"Gli orari compaiono dopo aver scelto il giorno.","err_name":"Scrivi nome e cognome, almeno due lettere.","err_phone":"Inserisci un numero valido, ad esempio 333 123 4567.","err_email":"Controlla l’indirizzo email, ad esempio nome@esempio.it.","service_down":"Il servizio di prenotazione non risponde in questo momento. Riprova tra poco o chiamaci al {phone}.","codes":{"closed":"In quel giorno il servizio è chiuso. Scegli un altro giorno.","slot_unavailable":"Questo orario non è più disponibile.","slot_full":"I posti per questo orario sono terminati. Scegli un altro orario.","day_full":"Per questo giorno abbiamo raggiunto il numero massimo di coperti.","rate_limited":"Hai inviato molte richieste in poco tempo. Riprova più tardi o chiamaci.","invalid_name":"Inserisci il nome per la prenotazione: almeno 2 lettere.","invalid_phone":"Inserisci un numero di telefono valido, con almeno 6 cifre.","invalid_email":"L’indirizzo email non è valido.","invalid_date":"Scegli una data valida.","invalid_service":"Scegli pranzo o cena.","invalid_time":"Scegli un orario valido.","not_bookable":"Questo orario non è prenotabile online. Scegli un’altra data o un altro orario.","group_too_large":"Per i gruppi più numerosi contattaci direttamente.","save_failed":"Non è stato possibile salvare la prenotazione. Riprova."},"note_email":"Richiesta ricevuta. Ti scriviamo a {to} appena lo staff la conferma, di solito entro poche ore.","note_sms":"Richiesta ricevuta. Ti mandiamo un SMS al {to} appena lo staff la conferma, di solito entro poche ore.","note_none":"Richiesta ricevuta. Lo staff la verifica: per sapere se è confermata chiamaci al {phone}.","recap_service":"Servizio","recap_day":"Giorno","recap_time":"Orario","recap_guests":"Persone","recap_name":"A nome di","print_title":"Bagno Marè · Prenotazione","print_code":"Codice","print_address":"Indirizzo","print_note":"Richiesta registrata. La conferma arriva quando lo staff la verifica.","ics_lunch":"Pranzo al Bagno Marè","ics_dinner":"Cena al Bagno Marè","ics_desc":"Prenotazione {code} per {guests}.","ics_file":"prenotazione-mare","summary_default":"Scegli giorno e orario"},"lang":"it","prefix":"/","prefixes":{"it":"/","en":"/en/","de":"/de/"},"suggest":{"it":{"text":"Questa pagina è disponibile anche in italiano.","action":"Passa all’italiano","dismiss":"No, grazie"},"en":{"text":"This page is also available in English.","action":"Switch to English","dismiss":"No thanks"},"de":{"text":"Diese Seite gibt es auch auf Deutsch.","action":"Auf Deutsch lesen","dismiss":"Nein, danke"}}}</script>
 </head>
 <body>
-{{> sprite}}
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"/><path d="m15.2 15.2 5.3 5.3"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M19.5 14.6A7.8 7.8 0 0 1 9.4 4.5a7.8 7.8 0 1 0 10.1 10.1Z"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19.5V5M6 10.5 12 4.5l6 6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.6l1.4 4-2 1.3a11 11 0 0 0 6.6 6.6l1.3-2 4 1.4v2.6a1.8 1.8 0 0 1-1.9 1.8A16.4 16.4 0 0 1 4.8 5.4a1.8 1.8 0 0 1 1.8-1.9Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="1.5"/><path d="m4 6.5 8 6.5 8-6.5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8.5" y="8.5" width="11" height="11" rx="1.5"/><path d="M15.5 8.5V6a1.5 1.5 0 0 0-1.5-1.5H6A1.5 1.5 0 0 0 4.5 6v8A1.5 1.5 0 0 0 6 15.5h2.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-print" viewBox="0 0 24 24"><path d="M7 9V3.5h10V9M7 17.5H4.5v-7A1.5 1.5 0 0 1 6 9h12a1.5 1.5 0 0 1 1.5 1.5v7H17"/><rect x="7" y="14" width="10" height="6.5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path d="M14.5 6 8.5 12l6 6"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4.5 6A1.5 1.5 0 0 1 6 4.5h12A1.5 1.5 0 0 1 19.5 6v9a1.5 1.5 0 0 1-1.5 1.5H10l-4.5 3.5v-3.5H6A1.5 1.5 0 0 1 4.5 15Z"/></symbol>
+  </svg>
 
   <div class="intro-curtain" aria-hidden="true">
     <span class="intro-curtain__word">Marè</span>
     <span class="intro-curtain__line"></span>
   </div>
 
-  <a class="skip-link" href="#contenuto">{{a11y.skip}}</a>
+  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
 
   <header class="site-header" id="siteHeader">
     <div class="site-header__inner">
-      <a class="wordmark" href="#inizio" aria-label="{{a11y.home}}">Marè<span class="wordmark__place">Cesenatico</span></a>
-      <nav class="main-nav" aria-label="{{a11y.nav}}">
-        <a href="#posto">{{nav.place}}</a>
-        <a href="#spiaggia">{{nav.beach}}</a>
-        <a href="#cucina">{{nav.kitchen}}</a>
-        <a href="#sera">{{nav.evening}}</a>
-        <a href="#faq">{{nav.info}}</a>
-        <a href="#contatti">{{nav.contacts}}</a>
+      <a class="wordmark" href="#inizio" aria-label="Bagno Marè, torna all’inizio">Marè<span class="wordmark__place">Cesenatico</span></a>
+      <nav class="main-nav" aria-label="Navigazione principale">
+        <a href="#posto">Il posto</a>
+        <a href="#spiaggia">Spiaggia</a>
+        <a href="#cucina">Cucina</a>
+        <a href="#sera">La sera</a>
+        <a href="#faq">Info</a>
+        <a href="#contatti">Contatti</a>
       </nav>
       <div class="header-tools">
         <button class="tool-btn" type="button" id="searchOpen" aria-haspopup="dialog" aria-controls="searchDialog">
           <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
-          <span class="tool-btn__label">{{nav.search}}</span>
+          <span class="tool-btn__label">Cerca</span>
           <kbd class="tool-btn__kbd" aria-hidden="true">/</kbd>
         </button>
-{{{lang_switch}}}
-        <button class="tool-btn tool-btn--icon" type="button" id="themeToggle" aria-label="{{a11y.theme_dark}}" aria-pressed="false">
+        <nav class="lang-switch" aria-label="Lingua"><a href="/" lang="it" hreflang="it" data-lang-link="it" aria-current="page"><span aria-hidden="true">IT</span><span class="sr-only">Italiano</span></a><a href="/en/" lang="en" hreflang="en" data-lang-link="en"><span aria-hidden="true">EN</span><span class="sr-only">English</span></a><a href="/de/" lang="de" hreflang="de" data-lang-link="de"><span aria-hidden="true">DE</span><span class="sr-only">Deutsch</span></a></nav>
+        <button class="tool-btn tool-btn--icon" type="button" id="themeToggle" aria-label="Passa al tema scuro" aria-pressed="false">
           <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"/></svg>
           <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"/></svg>
         </button>
-        <a class="btn btn--solid btn--small" href="#prenota" data-open-booking><span class="btn__label">{{nav.book}}</span></a>
+        <a class="btn btn--solid btn--small" href="#prenota" data-open-booking><span class="btn__label">Prenota</span></a>
         <button class="menu-btn" type="button" id="menuOpen" aria-haspopup="dialog" aria-controls="mobileNav">
           <span class="menu-btn__lines" aria-hidden="true"><i></i><i></i></span>
-          <span class="sr-only">{{a11y.open_menu}}</span>
+          <span class="sr-only">Apri il menu</span>
         </button>
       </div>
     </div>
@@ -72,41 +97,41 @@
 
     <div class="statusbar" id="statusBar">
       <div class="wrap statusbar__inner">
-        <p class="statusbar__text" aria-live="polite"><span class="statusbar__dot" aria-hidden="true"></span><span id="statusText">{{status.fallback}}</span></p>
-        <a class="statusbar__link" href="#orari"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>{{status.hours_link}}</a>
+        <p class="statusbar__text" aria-live="polite"><span class="statusbar__dot" aria-hidden="true"></span><span id="statusText">Molo di Levante 74 · Cesenatico</span></p>
+        <a class="statusbar__link" href="#orari"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Orari</a>
       </div>
     </div>
 
     <section class="hero" id="inizio" aria-labelledby="heroTitle">
       <div class="wrap hero__grid">
-        <h1 class="hero__title" id="heroTitle"><span class="hero__word" aria-hidden="true"><span>M</span><span>a</span><span>r</span><span>è</span></span><span class="sr-only">{{hero.sr_title}}</span></h1>
-        <p class="hero__lead">{{hero.lead}}</p>
+        <h1 class="hero__title" id="heroTitle"><span class="hero__word" aria-hidden="true"><span>M</span><span>a</span><span>r</span><span>è</span></span><span class="sr-only">Bagno Marè, Cesenatico</span></h1>
+        <p class="hero__lead">Cucina, caffè, spiaggia e bottega sul Molo di Levante. Si arriva in costume, si resta fino a cena.</p>
         <div class="hero__actions">
-          <a class="btn btn--solid" href="#prenota" data-open-booking><span class="btn__label">{{nav.book_table}}</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          <a class="link-arrow" href="#cucina">{{hero.menu}} <svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></a>
+          <a class="btn btn--solid" href="#prenota" data-open-booking><span class="btn__label">Prenota un tavolo</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="link-arrow" href="#cucina">Il menu <svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></a>
         </div>
         <figure class="hero__main frame">
-          <img src="/assets/MARE_180619_044-scaled-374x561.jpg" width="374" height="561" alt="{{hero.img_main}}" fetchpriority="high">
-          <p class="hero__badge" id="weatherBadge"><span class="hero__badge-dot" aria-hidden="true"></span><span>Cesenatico, IT</span><span class="hero__badge-sep" aria-hidden="true">·</span><span id="weatherText">{{hero.vibe}}</span></p>
+          <img src="/assets/MARE_180619_044-scaled-374x561.jpg" width="374" height="561" alt="La passerella tra gli ombrelloni bianchi che porta al mare" fetchpriority="high">
+          <p class="hero__badge" id="weatherBadge"><span class="hero__badge-dot" aria-hidden="true"></span><span>Cesenatico, IT</span><span class="hero__badge-sep" aria-hidden="true">·</span><span id="weatherText">Riviera Adriatica</span></p>
         </figure>
         <figure class="hero__aside frame">
-          <img src="/assets/mare-spiaggia-stabilimento-674x600.jpg" width="674" height="600" alt="{{hero.img_aside}}">
+          <img src="/assets/mare-spiaggia-stabilimento-674x600.jpg" width="674" height="600" alt="Le cabine numero 20 e 21, in legno a righe celesti">
         </figure>
         <div class="hero__meta">
           <span>Molo di Levante 74</span>
           <span class="hero__coords">44°12′ N · 12°24′ E</span>
-          <a class="hero__scroll" href="#posto">{{hero.scroll}} <svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></a>
+          <a class="hero__scroll" href="#posto">Scorri <svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></a>
         </div>
       </div>
     </section>
 
     <section class="place tone-shore" id="posto" aria-labelledby="placeTitle">
       <div class="wrap place__grid">
-        <p class="sec-index">{{place.index}}</p>
-        <h2 class="place__statement" id="placeTitle" data-search data-search-section="{{sections.place}}">{{place.statement}}</h2>
-        <p class="place__text">{{place.text}}</p>
-        <ul class="place__words" aria-label="{{place.words_label}}">
-          <li>{{place.w1}}</li><li>{{place.w2}}</li><li>{{place.w3}}</li><li>{{place.w4}}</li>
+        <p class="sec-index">01 / Il posto</p>
+        <h2 class="place__statement" id="placeTitle" data-search data-search-section="Il posto">Una fila di ombrelloni bianchi, il legno chiaro delle cabine, una cucina che lavora il pesce dell’Adriatico. Il resto lo decide la giornata.</h2>
+        <p class="place__text">Siamo sulla spiaggia di Levante, accanto al molo. Si viene per il mare e si resta per la tavola: la colazione dal nostro forno, il pranzo all’ombra, l’aperitivo quando la luce cala, la cena con le candele accese.</p>
+        <ul class="place__words" aria-label="Al Marè trovi">
+          <li>Cucina</li><li>Caffè</li><li>Spiaggia</li><li>Bottega</li>
         </ul>
       </div>
     </section>
@@ -114,18 +139,18 @@
     <section class="day tone-sand" id="giornata" aria-labelledby="dayTitle">
       <div class="wrap">
         <header class="sec-head">
-          <p class="sec-index">{{day.index}}</p>
+          <p class="sec-index">02 / La giornata</p>
           <div class="sec-head__main">
-            <h2 id="dayTitle">{{day.title}}</h2>
+            <h2 id="dayTitle">Dalle otto del mattino a dopo cena.</h2>
             <p class="day__season" id="daySeason"></p>
           </div>
         </header>
         <ol class="day__list">
-          <li class="day__stop" data-search data-search-section="{{sections.day}}"><time data-hour="spiaggia">8:00</time><h3>{{day.s1_title}}</h3><p>{{day.s1_text}}</p></li>
-          <li class="day__stop" data-search data-search-section="{{sections.day}}"><time data-hour="colazione">8:30</time><h3>{{day.s2_title}}</h3><p>{{day.s2_text}}</p></li>
-          <li class="day__stop" data-search data-search-section="{{sections.day}}"><time data-hour="pranzo">12:30</time><h3>{{day.s3_title}}</h3><p>{{day.s3_text}}</p></li>
-          <li class="day__stop" data-search data-search-section="{{sections.day}}"><time data-hour="aperitivo">18:30</time><h3>{{day.s4_title}}</h3><p>{{day.s4_text}}</p></li>
-          <li class="day__stop" data-search data-search-section="{{sections.day}}"><time data-hour="cena">19:30</time><h3>{{day.s5_title}}</h3><p>{{day.s5_text}}</p></li>
+          <li class="day__stop" data-search data-search-section="La giornata"><time data-hour="spiaggia">8:00</time><h3>Apre la spiaggia</h3><p>Ombrelloni distanziati, docce calde e il primo bagno con il mare piatto.</p></li>
+          <li class="day__stop" data-search data-search-section="La giornata"><time data-hour="colazione">8:30</time><h3>Colazione</h3><p>Lievitati del nostro forno, yogurt bio e pane tostato fino a mezzogiorno.</p></li>
+          <li class="day__stop" data-search data-search-section="La giornata"><time data-hour="pranzo">12:30</time><h3>Pranzo</h3><p>La cucina di mare, a due passi dall’ombrellone.</p></li>
+          <li class="day__stop" data-search data-search-section="La giornata"><time data-hour="aperitivo">18:30</time><h3>Aperitivo</h3><p>Testo, pizza al padellino e plateau di crudo da dividere.</p></li>
+          <li class="day__stop" data-search data-search-section="La giornata"><time data-hour="cena">19:30</time><h3>Cena</h3><p>Luci basse, tovaglie bianche e il molo davanti.</p></li>
         </ol>
       </div>
     </section>
@@ -133,56 +158,56 @@
     <section class="beach tone-mist" id="spiaggia" aria-labelledby="beachTitle">
       <div class="wrap beach__grid">
         <figure class="beach__photo frame">
-          <img src="/assets/mare-sup-674x833.jpg" width="674" height="833" alt="{{beach.img}}" loading="lazy" decoding="async">
-          <figcaption>{{beach.caption}}</figcaption>
+          <img src="/assets/mare-sup-674x833.jpg" width="674" height="833" alt="Due tavole SUP appoggiate a una cabina a righe, accanto a un ulivo in vaso" loading="lazy" decoding="async">
+          <figcaption>Tavole SUP a noleggio, sulla passerella.</figcaption>
         </figure>
         <div class="beach__copy">
-          <p class="sec-index">{{beach.index}}</p>
-          <h2 id="beachTitle" data-search data-search-section="{{sections.beach}}">{{beach.title}}</h2>
-          <p>{{beach.text}}</p>
+          <p class="sec-index">03 / La spiaggia</p>
+          <h2 id="beachTitle" data-search data-search-section="La spiaggia">La spiaggia di Levante.</h2>
+          <p>File parallele al mare e più di quattro metri e mezzo tra un ombrellone e l’altro. Si sta comodi anche ad agosto, dal mattino al tramonto.</p>
           <dl class="figures">
-            <div><dt>4,5 m</dt><dd>{{beach.fig1}}</dd></div>
-            <div><dt id="beachHours">8 / 18</dt><dd>{{beach.fig2}}</dd></div>
-            <div><dt>2</dt><dd>{{beach.fig3}}</dd></div>
+            <div><dt>4,5 m</dt><dd>tra un ombrellone e l’altro</dd></div>
+            <div><dt id="beachHours">8 / 18</dt><dd>gli orari della spiaggia</dd></div>
+            <div><dt>2</dt><dd>campi da beach volley e beach soccer</dd></div>
           </dl>
         </div>
         <div class="services">
           <div class="services__group">
-            <h3>{{beach.g1}}</h3>
+            <h3>In spiaggia</h3>
             <ul>
-              <li data-search data-search-section="{{sections.services}}">{{beach.g1_1}}</li>
-              <li data-search data-search-section="{{sections.services}}">{{beach.g1_2}}</li>
-              <li data-search data-search-section="{{sections.services}}">{{beach.g1_3}}</li>
-              <li data-search data-search-section="{{sections.services}}">{{beach.g1_4}}</li>
+              <li data-search data-search-section="Servizi">Ombrelloni distanziati</li>
+              <li data-search data-search-section="Servizi">Lettini in prima fila</li>
+              <li data-search data-search-section="Servizi">Tende Versilia</li>
+              <li data-search data-search-section="Servizi">Cabine e spogliatoi accessibili</li>
             </ul>
           </div>
           <div class="services__group">
-            <h3>{{beach.g2}}</h3>
+            <h3>Comfort</h3>
             <ul>
-              <li data-search data-search-section="{{sections.services}}">{{beach.g2_1}}</li>
-              <li data-search data-search-section="{{sections.services}}">{{beach.g2_2}}</li>
-              <li data-search data-search-section="{{sections.services}}">{{beach.g2_3}}</li>
-              <li data-search data-search-section="{{sections.services}}">{{beach.g2_4}}</li>
+              <li data-search data-search-section="Servizi">Docce calde</li>
+              <li data-search data-search-section="Servizi">Wi‑Fi gratuito</li>
+              <li data-search data-search-section="Servizi">Cassette di sicurezza</li>
+              <li data-search data-search-section="Servizi">Materassini e kit bagno</li>
             </ul>
           </div>
           <div class="services__group">
-            <h3>{{beach.g3}}</h3>
+            <h3>Sport e gioco</h3>
             <ul>
-              <li data-search data-search-section="{{sections.services}}">{{beach.g3_1}}</li>
-              <li data-search data-search-section="{{sections.services}}">{{beach.g3_2}}</li>
-              <li data-search data-search-section="{{sections.services}}">{{beach.g3_3}}</li>
-              <li data-search data-search-section="{{sections.services}}">{{beach.g3_4}}</li>
+              <li data-search data-search-section="Servizi">Beach volley e beach soccer</li>
+              <li data-search data-search-section="Servizi">SUP, canoe e pedalò a noleggio</li>
+              <li data-search data-search-section="Servizi">Area giochi e calcio balilla</li>
+              <li data-search data-search-section="Servizi">Sky Sport</li>
             </ul>
           </div>
           <div class="services__group">
-            <h3>{{beach.g4}}</h3>
+            <h3>Pausa</h3>
             <ul>
-              <li data-search data-search-section="{{sections.services}}">{{beach.g4_1}}</li>
-              <li data-search data-search-section="{{sections.services}}">{{beach.g4_2}}</li>
-              <li data-search data-search-section="{{sections.services}}">{{beach.g4_3}}</li>
+              <li data-search data-search-section="Servizi">Trattamenti shiatsu</li>
+              <li data-search data-search-section="Servizi">Bar aperto tutto il giorno</li>
+              <li data-search data-search-section="Servizi">Fotovoltaico e acqua piovana recuperata</li>
             </ul>
           </div>
-          <p class="services__note">{{beach.note}}</p>
+          <p class="services__note">Per ombrellone, lettini e tende rivolgiti direttamente alla spiaggia. Servizi e tariffe possono cambiare durante la stagione.</p>
         </div>
       </div>
     </section>
@@ -190,86 +215,86 @@
     <section class="kitchen tone-sand-deep" id="cucina" aria-labelledby="kitchenTitle">
       <div class="wrap">
         <div class="kitchen__intro">
-          <p class="sec-index">{{kitchen.index}}</p>
-          <h2 id="kitchenTitle" data-search data-search-section="{{sections.kitchen}}">{{kitchen.title}}</h2>
-          <p class="kitchen__text">{{kitchen.text}}</p>
+          <p class="sec-index">04 / La cucina</p>
+          <h2 id="kitchenTitle" data-search data-search-section="La cucina">La cucina di mare.</h2>
+          <p class="kitchen__text">Pasta ripiena, fresca o trafilata, sempre fatta da noi. Il pesce delle piccole barche della marineria di Cesenatico, crudo, al forno o nel brodetto. La carta segue il mercato.</p>
         </div>
         <div class="kitchen__photos">
           <figure class="kitchen__photo-a frame">
-            <img src="/assets/cucina-600x720.jpg" width="600" height="720" alt="{{kitchen.img_a}}" loading="lazy" decoding="async">
+            <img src="/assets/cucina-600x720.jpg" width="600" height="720" alt="Pasta con fagioli e salsa verde servita in un piatto bianco da una casseruola di rame" loading="lazy" decoding="async">
           </figure>
           <figure class="kitchen__photo-b frame">
-            <img src="/assets/275A0709-674x407.jpg" width="674" height="407" alt="{{kitchen.img_b}}" loading="lazy" decoding="async">
-            <figcaption>{{kitchen.caption_b}}</figcaption>
+            <img src="/assets/275A0709-674x407.jpg" width="674" height="407" alt="Matasse di pasta fresca appena tirata su un vassoio" loading="lazy" decoding="async">
+            <figcaption>Pasta tirata ogni mattina.</figcaption>
           </figure>
         </div>
 
         <div class="dishes" id="menu" aria-labelledby="dishesTitle">
           <header class="dishes__head">
-            <h3 id="dishesTitle">{{kitchen.dishes_title}}</h3>
-            <p>{{kitchen.dishes_note}}</p>
+            <h3 id="dishesTitle">Dalla carta 2026</h3>
+            <p>Una selezione. La carta completa cambia con la stagione.</p>
           </header>
           <ol class="dishes__list" id="dishList">
-            <li class="dish" data-preview="/assets/croissant-674x407.jpg" data-search data-search-section="{{sections.menu}}">
-              <span class="dish__moment">{{kitchen.d1_moment}}</span>
-              <span class="dish__name">{{kitchen.d1_name}}</span>
-              <span class="dish__desc">{{kitchen.d1_desc}}</span>
+            <li class="dish" data-preview="/assets/croissant-674x407.jpg" data-search data-search-section="Menu">
+              <span class="dish__moment">Colazione</span>
+              <span class="dish__name">Dal nostro forno</span>
+              <span class="dish__desc">Viennoiserie, bignè craquelin e sfogliate, ogni mattina fino a esaurimento.</span>
               <span class="dish__price">3 €</span>
               <img class="dish__thumb" src="/assets/croissant-674x407.jpg" alt="" loading="lazy" decoding="async" width="674" height="407">
             </li>
-            <li class="dish" data-preview="/assets/cucina-600x720.jpg" data-search data-search-section="{{sections.menu}}">
-              <span class="dish__moment">{{kitchen.d2_moment}}</span>
-              <span class="dish__name">{{kitchen.d2_name}}</span>
-              <span class="dish__desc">{{kitchen.d2_desc}}</span>
+            <li class="dish" data-preview="/assets/cucina-600x720.jpg" data-search data-search-section="Menu">
+              <span class="dish__moment">Pranzo e cena</span>
+              <span class="dish__name">Pasta e fagioli</span>
+              <span class="dish__desc">Passatelli, frutti di mare, crostacei e lardo di seppia.</span>
               <span class="dish__price">23 €</span>
               <img class="dish__thumb" src="/assets/cucina-600x720.jpg" alt="" loading="lazy" decoding="async" width="600" height="720">
             </li>
-            <li class="dish" data-preview="/assets/275A0709-674x407.jpg" data-search data-search-section="{{sections.menu}}">
-              <span class="dish__moment">{{kitchen.d3_moment}}</span>
-              <span class="dish__name">{{kitchen.d3_name}}</span>
-              <span class="dish__desc">{{kitchen.d3_desc}}</span>
+            <li class="dish" data-preview="/assets/275A0709-674x407.jpg" data-search data-search-section="Menu">
+              <span class="dish__moment">Pranzo e cena</span>
+              <span class="dish__name">Pappardelle</span>
+              <span class="dish__desc">Baccalà al rosmarino, cipolla dell’acqua e tartufo.</span>
               <span class="dish__price">25 €</span>
               <img class="dish__thumb" src="/assets/275A0709-674x407.jpg" alt="" loading="lazy" decoding="async" width="674" height="407">
             </li>
-            <li class="dish" data-preview="/assets/SGA17_FOTO277-374x560.jpg" data-search data-search-section="{{sections.menu}}">
-              <span class="dish__moment">{{kitchen.d4_moment}}</span>
-              <span class="dish__name">{{kitchen.d4_name}}</span>
-              <span class="dish__desc">{{kitchen.d4_desc}}</span>
+            <li class="dish" data-preview="/assets/SGA17_FOTO277-374x560.jpg" data-search data-search-section="Menu">
+              <span class="dish__moment">Il mare</span>
+              <span class="dish__name">Brodetto di pesci di riva</span>
+              <span class="dish__desc">All’aceto, con crostacei e scarpetta. Anche senza glutine.</span>
               <span class="dish__price">30 €</span>
               <img class="dish__thumb" src="/assets/SGA17_FOTO277-374x560.jpg" alt="" loading="lazy" decoding="async" width="374" height="560">
             </li>
-            <li class="dish" data-preview="/assets/MARE_140721_087-374x561.jpg" data-search data-search-section="{{sections.menu}}">
-              <span class="dish__moment">{{kitchen.d5_moment}}</span>
-              <span class="dish__name">{{kitchen.d5_name}}</span>
-              <span class="dish__desc">{{kitchen.d5_desc}}</span>
-              <span class="dish__price">{{kitchen.d5_price}}</span>
+            <li class="dish" data-preview="/assets/MARE_140721_087-374x561.jpg" data-search data-search-section="Menu">
+              <span class="dish__moment">Aperitivo</span>
+              <span class="dish__name">L’ora blu</span>
+              <span class="dish__desc">Cocktail, testo farcito e pizza al padellino da dividere.</span>
+              <span class="dish__price">Dalle 18:30</span>
               <img class="dish__thumb" src="/assets/MARE_140721_087-374x561.jpg" alt="" loading="lazy" decoding="async" width="374" height="561">
             </li>
-            <li class="dish" data-preview="/assets/IMG_1045-374x561.jpg" data-search data-search-section="{{sections.menu}}">
-              <span class="dish__moment">{{kitchen.d6_moment}}</span>
-              <span class="dish__name">{{kitchen.d6_name}}</span>
-              <span class="dish__desc">{{kitchen.d6_desc}}</span>
-              <span class="dish__price">{{kitchen.d6_price}}</span>
+            <li class="dish" data-preview="/assets/IMG_1045-374x561.jpg" data-search data-search-section="Menu">
+              <span class="dish__moment">La cantina</span>
+              <span class="dish__name">Carta dei vini</span>
+              <span class="dish__desc">Bollicine, bianchi del territorio e etichette dal mondo.</span>
+              <span class="dish__price">Al calice</span>
               <img class="dish__thumb" src="/assets/IMG_1045-374x561.jpg" alt="" loading="lazy" decoding="async" width="374" height="561">
             </li>
           </ol>
           <figure class="dishes__preview" aria-hidden="true">
             <div class="dishes__stage" id="dishStage"></div>
-            <figcaption class="dishes__caption"><span id="dishCaptionMoment">{{kitchen.d1_moment}}</span><span id="dishCaptionName">{{kitchen.d1_name}}</span></figcaption>
+            <figcaption class="dishes__caption"><span id="dishCaptionMoment">Colazione</span><span id="dishCaptionName">Dal nostro forno</span></figcaption>
           </figure>
         </div>
 
-        <div class="menu-files" data-search data-search-section="{{sections.menu}}">
-          <p class="menu-files__label">{{kitchen.files_label}}</p>
+        <div class="menu-files" data-search data-search-section="Menu">
+          <p class="menu-files__label">Le carte complete in PDF</p>
           <ul>
-            <li><a href="/assets/menus/colazione-2026.pdf" target="_blank" rel="noopener" hreflang="it">{{kitchen.file_breakfast}} <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
-            <li><a href="/assets/menus/pranzo-2026.pdf" target="_blank" rel="noopener" hreflang="it">{{kitchen.file_lunch}} <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
-            <li><a href="/assets/menus/cena-2026.pdf" target="_blank" rel="noopener" hreflang="it">{{kitchen.file_dinner}} <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
-            <li><a href="/assets/menus/aperitivo-2026.pdf" target="_blank" rel="noopener" hreflang="it">{{kitchen.file_aperitivo}} <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
-            <li><a href="/assets/menus/carta-vini-2026.pdf" target="_blank" rel="noopener" hreflang="it">{{kitchen.file_wine}} <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
-            <li><a href="/assets/menus/allergeni-2026.pdf" target="_blank" rel="noopener" hreflang="it">{{kitchen.file_allergens}} <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
+            <li><a href="/assets/menus/colazione-2026.pdf" target="_blank" rel="noopener" hreflang="it">Colazione <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
+            <li><a href="/assets/menus/pranzo-2026.pdf" target="_blank" rel="noopener" hreflang="it">Pranzo <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
+            <li><a href="/assets/menus/cena-2026.pdf" target="_blank" rel="noopener" hreflang="it">Cena <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
+            <li><a href="/assets/menus/aperitivo-2026.pdf" target="_blank" rel="noopener" hreflang="it">Aperitivo <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
+            <li><a href="/assets/menus/carta-vini-2026.pdf" target="_blank" rel="noopener" hreflang="it">Vini <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
+            <li><a href="/assets/menus/allergeni-2026.pdf" target="_blank" rel="noopener" hreflang="it">Allergeni <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
           </ul>
-          <p class="menu-files__note">{{kitchen.files_note}}</p>
+          <p class="menu-files__note"></p>
         </div>
       </div>
     </section>
@@ -277,39 +302,39 @@
     <section class="evening tone-ink" id="sera" aria-labelledby="eveningTitle">
       <div class="wrap evening__grid">
         <figure class="evening__main frame">
-          <img src="/assets/MARE_140721_285-600x720.jpg" width="600" height="720" alt="{{evening.img_main}}" loading="lazy" decoding="async">
+          <img src="/assets/MARE_140721_285-600x720.jpg" width="600" height="720" alt="Un tavolo apparecchiato con candele sulla terrazza, il porto e il mare al tramonto" loading="lazy" decoding="async">
         </figure>
         <div class="evening__copy">
-          <p class="sec-index">{{evening.index}}</p>
-          <h2 id="eveningTitle" data-search data-search-section="{{sections.evening}}">{{evening.title}}</h2>
-          <p>{{evening.text}}</p>
-          <a class="btn btn--light" href="#prenota" data-open-booking data-service="cena"><span class="btn__label">{{evening.cta}}</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <p class="sec-index">05 / La sera</p>
+          <h2 id="eveningTitle" data-search data-search-section="La sera">La sera, sul molo.</h2>
+          <p>Quando la spiaggia si svuota, la sala si accende: lanterne, gabbie appese al soffitto, tovaglie bianche e il porto a pochi passi.</p>
+          <a class="btn btn--light" href="#prenota" data-open-booking data-service="cena"><span class="btn__label">Prenota la cena</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
         <figure class="evening__wide frame">
-          <img src="/assets/MG_5615-374x249.jpg" width="374" height="249" alt="{{evening.img_wide}}" loading="lazy" decoding="async">
+          <img src="/assets/MG_5615-374x249.jpg" width="374" height="249" alt="La sala serale con le cabine a righe illuminate sullo sfondo" loading="lazy" decoding="async">
         </figure>
         <figure class="evening__tall frame">
-          <img src="/assets/IMG_1624-2-374x561.jpg" width="374" height="561" alt="{{evening.img_tall}}" loading="lazy" decoding="async">
+          <img src="/assets/IMG_1624-2-374x561.jpg" width="374" height="561" alt="Una lunga tavolata con candele e fiori, di sera" loading="lazy" decoding="async">
         </figure>
-        <div class="evening__events" data-search data-search-section="{{sections.evening}}">
-          <h3>{{evening.events_title}}</h3>
-          <p>{{evening.events_text}}</p>
-          <a class="link-arrow link-arrow--light" href="mailto:info@mareconlaccento.it?subject={{evening.mail_subject}}">info@mareconlaccento.it <svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></a>
+        <div class="evening__events" data-search data-search-section="La sera">
+          <h3>Eventi privati</h3>
+          <p>Compleanni, cene aziendali e matrimoni sulla sabbia. Scrivici e costruiamo la serata insieme.</p>
+          <a class="link-arrow link-arrow--light" href="mailto:info@mareconlaccento.it?subject=Evento%20privato%20al%20Mar%C3%A8">info@mareconlaccento.it <svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></a>
         </div>
         <figure class="evening__small frame">
-          <img src="/assets/Foto_240-3-374x250.jpg" width="374" height="250" alt="{{evening.img_small}}" loading="lazy" decoding="async">
+          <img src="/assets/Foto_240-3-374x250.jpg" width="374" height="250" alt="Gabbie per uccelli bianche appese alle travi del soffitto" loading="lazy" decoding="async">
         </figure>
       </div>
     </section>
 
     <section class="cta tone-shore" id="prenota" aria-labelledby="ctaTitle">
       <div class="wrap cta__grid">
-        <p class="sec-index">{{cta.index}}</p>
-        <h2 class="cta__title" id="ctaTitle" data-search data-search-section="{{sections.book}}">{{cta.title}}</h2>
+        <p class="sec-index">06 / Prenota</p>
+        <h2 class="cta__title" id="ctaTitle" data-search data-search-section="Prenota">Un tavolo, vista mare.</h2>
         <div class="cta__side">
-          <p>{{cta.text}}</p>
-          <a class="btn btn--solid" href="#prenota" data-open-booking><span class="btn__label">{{nav.book_table}}</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          <p class="cta__alt">{{cta.alt}} <a href="tel:+393331059588">333 105 9588</a></p>
+          <p>Scegli pranzo o cena, il giorno e l’orario. Ti chiediamo quante persone siete, un nome e un recapito.</p>
+          <a class="btn btn--solid" href="#prenota" data-open-booking><span class="btn__label">Prenota un tavolo</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <p class="cta__alt">Preferisci parlare con noi? <a href="tel:+393331059588">333 105 9588</a></p>
         </div>
       </div>
     </section>
@@ -317,38 +342,38 @@
     <section class="faq tone-sand" id="faq" aria-labelledby="faqTitle">
       <div class="wrap faq__grid">
         <header class="faq__head">
-          <p class="sec-index">{{faq.index}}</p>
-          <h2 id="faqTitle">{{faq.title}}</h2>
-          <p>{{faq.intro_before}} <button class="inline-link" type="button" data-open-search>{{faq.intro_search}}</button> {{faq.intro_after}}</p>
+          <p class="sec-index">07 / Da sapere</p>
+          <h2 id="faqTitle">Prima di venire.</h2>
+          <p>Non trovi la risposta? <button class="inline-link" type="button" data-open-search>Cerca nel sito</button> oppure scrivici.</p>
         </header>
         <div class="faq__list">
-          <details class="faq__item" data-search data-search-section="{{sections.faq}}">
-            <summary>{{faq.q1}}<span class="faq__sign" aria-hidden="true"></span></summary>
-            <div class="faq__body"><p>{{faq.a1}}</p></div>
+          <details class="faq__item" data-search data-search-section="Domande">
+            <summary>Come funziona la prenotazione online?<span class="faq__sign" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>Scegli pranzo o cena, il giorno, il numero di persone e uno degli orari disponibili. Lascia nome, telefono e, se vuoi, un’email e una nota. Quando lo staff conferma la richiesta, o se non può accoglierla, ti scriviamo per email o con un SMS.</p></div>
           </details>
-          <details class="faq__item" data-search data-search-section="{{sections.faq}}">
-            <summary>{{faq.q2}}<span class="faq__sign" aria-hidden="true"></span></summary>
-            <div class="faq__body"><p>{{faq.a2}}</p></div>
+          <details class="faq__item" data-search data-search-section="Domande">
+            <summary>Non vedo orari disponibili. Perché?<span class="faq__sign" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>Quel giorno siamo chiusi, oppure i posti di quell’orario sono già prenotati. Prova un altro orario, un altro giorno o chiamaci: a volte si libera un tavolo.</p></div>
           </details>
-          <details class="faq__item" data-search data-search-section="{{sections.faq}}">
-            <summary>{{faq.q3}}<span class="faq__sign" aria-hidden="true"></span></summary>
-            <div class="faq__body"><p>{{faq.a3}}</p></div>
+          <details class="faq__item" data-search data-search-section="Domande">
+            <summary>Quando siete aperti?<span class="faq__sign" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>Date della stagione, orari di ogni servizio e chiusure in programma sono nella sezione Contatti e si aggiornano quando cambiano. Nel calendario della prenotazione i giorni chiusi non si possono scegliere.</p></div>
           </details>
-          <details class="faq__item" data-search data-search-section="{{sections.faq}}">
-            <summary>{{faq.q4}}<span class="faq__sign" aria-hidden="true"></span></summary>
-            <div class="faq__body"><p>{{faq.a4}}</p></div>
+          <details class="faq__item" data-search data-search-section="Domande">
+            <summary>Siamo più di 12 persone.<span class="faq__sign" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>Online si prenotano tavoli fino a 12 persone. Per gruppi più grandi, cene aziendali o feste private scrivici a info@mareconlaccento.it.</p></div>
           </details>
-          <details class="faq__item" data-search data-search-section="{{sections.faq}}">
-            <summary>{{faq.q5}}<span class="faq__sign" aria-hidden="true"></span></summary>
-            <div class="faq__body"><p>{{faq.a5}}</p></div>
+          <details class="faq__item" data-search data-search-section="Domande">
+            <summary>Posso prenotare l’ombrellone da qui?<span class="faq__sign" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>No, il modulo online è solo per il ristorante. Per ombrellone, lettini e tende rivolgiti direttamente alla spiaggia.</p></div>
           </details>
-          <details class="faq__item" data-search data-search-section="{{sections.faq}}">
-            <summary>{{faq.q6}}<span class="faq__sign" aria-hidden="true"></span></summary>
-            <div class="faq__body"><p>{{faq.a6}}</p></div>
+          <details class="faq__item" data-search data-search-section="Domande">
+            <summary>Ho un’allergia o un’intolleranza.<span class="faq__sign" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>Segnalala nelle note della prenotazione e ricordala al personale prima di ordinare. Molti piatti sono disponibili senza glutine e il documento allergeni è scaricabile dalla sezione cucina.</p></div>
           </details>
-          <details class="faq__item" data-search data-search-section="{{sections.faq}}">
-            <summary>{{faq.q7}}<span class="faq__sign" aria-hidden="true"></span></summary>
-            <div class="faq__body"><p>{{faq.a7}}</p></div>
+          <details class="faq__item" data-search data-search-section="Domande">
+            <summary>Venite con bambini piccoli?<span class="faq__sign" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>Scrivilo nelle note: ci organizziamo con il seggiolone. In spiaggia c’è un’area giochi per i più piccoli.</p></div>
           </details>
         </div>
       </div>
@@ -357,50 +382,50 @@
     <section class="contact tone-mist" id="contatti" aria-labelledby="contactTitle">
       <div class="wrap contact__grid">
         <header class="contact__head">
-          <p class="sec-index">{{contact.index}}</p>
-          <h2 id="contactTitle" data-search data-search-section="{{sections.contacts}}">Molo di Levante 74.</h2>
-          <p>{{contact.sub}}</p>
+          <p class="sec-index">08 / Contatti</p>
+          <h2 id="contactTitle" data-search data-search-section="Contatti">Molo di Levante 74.</h2>
+          <p>47042 Cesenatico (FC), sulla spiaggia di Levante.</p>
         </header>
         <div class="contact__cards">
           <div class="contact__item">
-            <p class="contact__label">{{contact.address}}</p>
+            <p class="contact__label">Indirizzo</p>
             <p class="contact__value">Molo di Levante 74, 47042 Cesenatico (FC)</p>
             <div class="contact__actions">
-              <button class="copy-btn" type="button" data-copy="Bagno Marè, Molo di Levante 74, 47042 Cesenatico (FC)"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>{{ui.copy}}</span></button>
-              <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&amp;query=Bagno%20Mar%C3%A8%20Molo%20di%20Levante%2074%20Cesenatico" target="_blank" rel="noopener">{{contact.directions}} <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <button class="copy-btn" type="button" data-copy="Bagno Marè, Molo di Levante 74, 47042 Cesenatico (FC)"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copia</span></button>
+              <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&amp;query=Bagno%20Mar%C3%A8%20Molo%20di%20Levante%2074%20Cesenatico" target="_blank" rel="noopener">Indicazioni <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </div>
           </div>
           <div class="contact__item">
-            <p class="contact__label">{{contact.email}}</p>
+            <p class="contact__label">Email</p>
             <p class="contact__value">info@mareconlaccento.it</p>
             <div class="contact__actions">
-              <button class="copy-btn" type="button" data-copy="info@mareconlaccento.it"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>{{ui.copy}}</span></button>
-              <a class="link-arrow" href="mailto:info@mareconlaccento.it">{{contact.write}} <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <button class="copy-btn" type="button" data-copy="info@mareconlaccento.it"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copia</span></button>
+              <a class="link-arrow" href="mailto:info@mareconlaccento.it">Scrivi <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </div>
           </div>
           <div class="contact__item">
-            <p class="contact__label">{{contact.phone}}</p>
+            <p class="contact__label">Telefono</p>
             <p class="contact__value">+39 333 105 9588</p>
             <div class="contact__actions">
-              <button class="copy-btn" type="button" data-copy="+39 333 105 9588"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>{{ui.copy}}</span></button>
-              <a class="link-arrow" href="tel:+393331059588">{{contact.call}} <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <button class="copy-btn" type="button" data-copy="+39 333 105 9588"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copia</span></button>
+              <a class="link-arrow" href="tel:+393331059588">Chiama <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </div>
           </div>
         </div>
 
-        <div class="hours" id="orari" aria-labelledby="hoursTitle" data-search data-search-section="{{sections.contacts}}">
-          <h3 id="hoursTitle">{{hours.title}}</h3>
+        <div class="hours" id="orari" aria-labelledby="hoursTitle" data-search data-search-section="Contatti">
+          <h3 id="hoursTitle">Orari</h3>
           <table class="hours__table">
-            <caption class="sr-only">{{hours.caption}}</caption>
+            <caption class="sr-only">Orari dei servizi del Bagno Marè</caption>
             <tbody id="hoursBody">
-              <tr data-hours-row="spiaggia"><th scope="row">{{hours.spiaggia}}</th><td>8:00–18:00</td></tr>
-              <tr data-hours-row="colazione"><th scope="row">{{hours.colazione}}</th><td>8:30–12:00</td></tr>
-              <tr data-hours-row="pranzo"><th scope="row">{{hours.pranzo}}</th><td>12:30–14:30</td></tr>
-              <tr data-hours-row="aperitivo"><th scope="row">{{hours.aperitivo}}</th><td>18:30–20:00</td></tr>
-              <tr data-hours-row="cena"><th scope="row">{{hours.cena}}</th><td>19:30–23:00</td></tr>
+              <tr data-hours-row="spiaggia"><th scope="row">Spiaggia</th><td>8:00–18:00</td></tr>
+              <tr data-hours-row="colazione"><th scope="row">Colazione</th><td>8:30–12:00</td></tr>
+              <tr data-hours-row="pranzo"><th scope="row">Pranzo</th><td>12:30–14:30</td></tr>
+              <tr data-hours-row="aperitivo"><th scope="row">Aperitivo</th><td>18:30–20:00</td></tr>
+              <tr data-hours-row="cena"><th scope="row">Cena</th><td>19:30–23:00</td></tr>
             </tbody>
           </table>
-          <ul class="hours__notes" id="hoursNotes"><li>{{hours.fallback}}</li></ul>
+          <ul class="hours__notes" id="hoursNotes"><li>Le date della stagione e le chiusure vengono aggiornate dallo staff.</li></ul>
         </div>
       </div>
     </section>
@@ -413,51 +438,51 @@
         <p class="site-footer__label">Bagno Marè</p>
         <p>Molo di Levante 74<br>47042 Cesenatico (FC)</p>
       </div>
-      <nav class="site-footer__col" aria-label="{{a11y.footer_nav}}">
-        <p class="site-footer__label">{{footer.site}}</p>
-        <a href="#spiaggia">{{nav.beach}}</a>
-        <a href="#cucina">{{nav.kitchen}}</a>
-        <a href="#prenota" data-open-booking>{{nav.book}}</a>
-        <a href="{{prefix}}privacy.html">{{footer.privacy}}</a>
-        <a href="/admin.html" hreflang="it">{{footer.admin}}</a>
+      <nav class="site-footer__col" aria-label="Collegamenti a piè di pagina">
+        <p class="site-footer__label">Il sito</p>
+        <a href="#spiaggia">Spiaggia</a>
+        <a href="#cucina">Cucina</a>
+        <a href="#prenota" data-open-booking>Prenota</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/admin.html" hreflang="it">Area gestione</a>
       </nav>
       <div class="site-footer__base">
         <p>© <span id="year">2026</span> Bagno Marè · Cesenatico</p>
-        <p>{{footer.updated}} <time datetime="2026-10-02">{{footer.updated_date}}</time></p>
+        <p>Ultimo aggiornamento: <time datetime="2026-10-02">2 ottobre 2026</time></p>
       </div>
     </div>
   </footer>
 
   <div class="fab-stack">
-    <button class="fab fab--top" type="button" id="toTop" aria-label="{{a11y.to_top}}"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg></button>
-    <button class="fab fab--contact" type="button" popovertarget="contactPop" aria-label="{{a11y.quick_contacts}}"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><span class="fab__label">{{nav.contacts}}</span></button>
+    <button class="fab fab--top" type="button" id="toTop" aria-label="Torna all’inizio della pagina"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg></button>
+    <button class="fab fab--contact" type="button" popovertarget="contactPop" aria-label="Contatti rapidi"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><span class="fab__label">Contatti</span></button>
   </div>
   <div class="contact-pop" id="contactPop" popover>
-    <p class="contact-pop__title">{{fab.title}}</p>
-    <a class="contact-pop__row" href="tel:+393331059588"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span><strong>{{contact.call}}</strong><small>333 105 9588</small></span></a>
-    <a class="contact-pop__row" href="mailto:info@mareconlaccento.it"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span><strong>{{contact.write}}</strong><small>info@mareconlaccento.it</small></span></a>
-    <a class="contact-pop__row" href="https://www.google.com/maps/search/?api=1&amp;query=Bagno%20Mar%C3%A8%20Molo%20di%20Levante%2074%20Cesenatico" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span><strong>{{contact.directions}}</strong><small>Molo di Levante 74</small></span></a>
-    <button class="btn btn--solid btn--block" type="button" data-open-booking><span class="btn__label">{{nav.book_table}}</span></button>
+    <p class="contact-pop__title">Parliamone</p>
+    <a class="contact-pop__row" href="tel:+393331059588"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span><strong>Chiama</strong><small>333 105 9588</small></span></a>
+    <a class="contact-pop__row" href="mailto:info@mareconlaccento.it"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span><strong>Scrivi</strong><small>info@mareconlaccento.it</small></span></a>
+    <a class="contact-pop__row" href="https://www.google.com/maps/search/?api=1&amp;query=Bagno%20Mar%C3%A8%20Molo%20di%20Levante%2074%20Cesenatico" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span><strong>Indicazioni</strong><small>Molo di Levante 74</small></span></a>
+    <button class="btn btn--solid btn--block" type="button" data-open-booking><span class="btn__label">Prenota un tavolo</span></button>
   </div>
 
-  <dialog class="mnav" id="mobileNav" aria-label="{{a11y.menu}}">
+  <dialog class="mnav" id="mobileNav" aria-label="Menu">
     <div class="mnav__top">
       <span class="wordmark">Marè<span class="wordmark__place">Cesenatico</span></span>
-      <button class="tool-btn tool-btn--icon" type="button" data-close aria-label="{{a11y.close_menu}}"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+      <button class="tool-btn tool-btn--icon" type="button" data-close aria-label="Chiudi il menu"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
     </div>
-    <nav class="mnav__links" aria-label="{{a11y.mobile_nav}}">
-      <a href="#posto"><span>01</span>{{nav.place}}</a>
-      <a href="#spiaggia"><span>02</span>{{nav.beach}}</a>
-      <a href="#cucina"><span>03</span>{{nav.kitchen}}</a>
-      <a href="#sera"><span>04</span>{{nav.evening}}</a>
-      <a href="#faq"><span>05</span>{{nav.info}}</a>
-      <a href="#contatti"><span>06</span>{{nav.contacts}}</a>
+    <nav class="mnav__links" aria-label="Menu mobile">
+      <a href="#posto"><span>01</span>Il posto</a>
+      <a href="#spiaggia"><span>02</span>Spiaggia</a>
+      <a href="#cucina"><span>03</span>Cucina</a>
+      <a href="#sera"><span>04</span>La sera</a>
+      <a href="#faq"><span>05</span>Info</a>
+      <a href="#contatti"><span>06</span>Contatti</a>
     </nav>
     <div class="mnav__foot">
-      <button class="btn btn--solid btn--block" type="button" data-open-booking><span class="btn__label">{{nav.book_table}}</span></button>
-      <button class="btn btn--outline btn--block" type="button" data-open-search><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><span class="btn__label">{{nav.search_site}}</span></button>
+      <button class="btn btn--solid btn--block" type="button" data-open-booking><span class="btn__label">Prenota un tavolo</span></button>
+      <button class="btn btn--outline btn--block" type="button" data-open-search><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><span class="btn__label">Cerca nel sito</span></button>
       <div class="mnav__langs">
-{{{lang_switch}}}
+        <nav class="lang-switch" aria-label="Lingua"><a href="/" lang="it" hreflang="it" data-lang-link="it" aria-current="page"><span aria-hidden="true">IT</span><span class="sr-only">Italiano</span></a><a href="/en/" lang="en" hreflang="en" data-lang-link="en"><span aria-hidden="true">EN</span><span class="sr-only">English</span></a><a href="/de/" lang="de" hreflang="de" data-lang-link="de"><span aria-hidden="true">DE</span><span class="sr-only">Deutsch</span></a></nav>
       </div>
       <p>Molo di Levante 74 · Cesenatico</p>
     </div>
@@ -467,11 +492,11 @@
     <div class="search__box">
       <div class="search__field">
         <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
-        <label class="sr-only" id="searchLabel" for="searchInput">{{nav.search_site}}</label>
-        <input id="searchInput" type="search" placeholder="{{search.placeholder}}" autocomplete="off" spellcheck="false" aria-describedby="searchStatus" aria-controls="searchResults">
-        <button class="search__esc" type="button" data-close><kbd>Esc</kbd><span class="sr-only">{{a11y.close_search}}</span></button>
+        <label class="sr-only" id="searchLabel" for="searchInput">Cerca nel sito</label>
+        <input id="searchInput" type="search" placeholder="Cerca: brodetto, docce, allergie…" autocomplete="off" spellcheck="false" aria-describedby="searchStatus" aria-controls="searchResults">
+        <button class="search__esc" type="button" data-close><kbd>Esc</kbd><span class="sr-only">Chiudi la ricerca</span></button>
       </div>
-      <p class="search__status" id="searchStatus" aria-live="polite">{{search.suggestions}}</p>
+      <p class="search__status" id="searchStatus" aria-live="polite">Suggerimenti</p>
       <ul class="search__results" id="searchResults"></ul>
     </div>
   </dialog>
@@ -480,32 +505,32 @@
     <div class="drawer__panel">
       <header class="drawer__head">
         <div>
-          <p class="drawer__kicker">{{booking.kicker}}</p>
-          <h2 id="drawerTitle">{{nav.book_table}}</h2>
+          <p class="drawer__kicker">Ristorante · Bagno Marè</p>
+          <h2 id="drawerTitle">Prenota un tavolo</h2>
         </div>
-        <button class="tool-btn tool-btn--icon" type="button" data-close aria-label="{{a11y.close_booking}}"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+        <button class="tool-btn tool-btn--icon" type="button" data-close aria-label="Chiudi la prenotazione"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
       </header>
 
       <div class="drawer__body" id="drawerBody">
         <form class="booking" id="bookingForm" novalidate>
           <fieldset class="step">
-            <legend class="step__label"><span>01</span>{{booking.service}}</legend>
+            <legend class="step__label"><span>01</span>Servizio</legend>
             <div class="segmented">
-              <label class="segmented__opt"><input type="radio" name="service" value="pranzo" checked><span><strong>{{booking.lunch}}</strong><small data-service-from="pranzo">{{booking.from_lunch}}</small></span></label>
-              <label class="segmented__opt"><input type="radio" name="service" value="cena"><span><strong>{{booking.dinner}}</strong><small data-service-from="cena">{{booking.from_dinner}}</small></span></label>
+              <label class="segmented__opt"><input type="radio" name="service" value="pranzo" checked><span><strong>Pranzo</strong><small data-service-from="pranzo">dalle 12:30</small></span></label>
+              <label class="segmented__opt"><input type="radio" name="service" value="cena"><span><strong>Cena</strong><small data-service-from="cena">dalle 19:30</small></span></label>
             </div>
           </fieldset>
 
           <fieldset class="step" aria-describedby="dateError">
-            <legend class="step__label"><span>02</span>{{booking.day}}</legend>
+            <legend class="step__label"><span>02</span>Giorno</legend>
             <div class="calendar" id="calendar">
               <div class="calendar__head">
-                <button class="calendar__nav" type="button" id="calPrev" aria-label="{{a11y.prev_month}}"><svg class="icon" aria-hidden="true"><use href="#i-prev"/></svg></button>
+                <button class="calendar__nav" type="button" id="calPrev" aria-label="Mese precedente"><svg class="icon" aria-hidden="true"><use href="#i-prev"/></svg></button>
                 <p class="calendar__month" id="calMonth" aria-live="polite"></p>
-                <button class="calendar__nav" type="button" id="calNext" aria-label="{{a11y.next_month}}"><svg class="icon" aria-hidden="true"><use href="#i-next"/></svg></button>
+                <button class="calendar__nav" type="button" id="calNext" aria-label="Mese successivo"><svg class="icon" aria-hidden="true"><use href="#i-next"/></svg></button>
               </div>
               <table class="calendar__grid" role="grid" aria-labelledby="calMonth">
-                <thead><tr><th scope="col" abbr="{{booking.wd1}}">{{booking.wd1_short}}</th><th scope="col" abbr="{{booking.wd2}}">{{booking.wd2_short}}</th><th scope="col" abbr="{{booking.wd3}}">{{booking.wd3_short}}</th><th scope="col" abbr="{{booking.wd4}}">{{booking.wd4_short}}</th><th scope="col" abbr="{{booking.wd5}}">{{booking.wd5_short}}</th><th scope="col" abbr="{{booking.wd6}}">{{booking.wd6_short}}</th><th scope="col" abbr="{{booking.wd7}}">{{booking.wd7_short}}</th></tr></thead>
+                <thead><tr><th scope="col" abbr="lunedì">L</th><th scope="col" abbr="martedì">M</th><th scope="col" abbr="mercoledì">M</th><th scope="col" abbr="giovedì">G</th><th scope="col" abbr="venerdì">V</th><th scope="col" abbr="sabato">S</th><th scope="col" abbr="domenica">D</th></tr></thead>
                 <tbody id="calBody"></tbody>
               </table>
             </div>
@@ -513,50 +538,50 @@
           </fieldset>
 
           <fieldset class="step">
-            <legend class="step__label"><span>03</span>{{booking.guests}}</legend>
+            <legend class="step__label"><span>03</span>Persone</legend>
             <div class="stepper">
-              <button class="stepper__btn" type="button" data-step="-1" aria-label="{{a11y.guests_less}}"><svg class="icon" aria-hidden="true"><use href="#i-minus"/></svg></button>
-              <input class="stepper__value" id="bookingGuests" name="guests" type="number" inputmode="numeric" min="1" max="12" value="2" aria-label="{{a11y.guests}}" aria-describedby="guestsHint">
-              <button class="stepper__btn" type="button" data-step="1" aria-label="{{a11y.guests_more}}"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+              <button class="stepper__btn" type="button" data-step="-1" aria-label="Una persona in meno"><svg class="icon" aria-hidden="true"><use href="#i-minus"/></svg></button>
+              <input class="stepper__value" id="bookingGuests" name="guests" type="number" inputmode="numeric" min="1" max="12" value="2" aria-label="Numero di persone" aria-describedby="guestsHint">
+              <button class="stepper__btn" type="button" data-step="1" aria-label="Una persona in più"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
             </div>
-            <p class="hint" id="guestsHint">{{booking.guests_hint}}</p>
+            <p class="hint" id="guestsHint">Oltre 12 persone? Scrivici, organizziamo noi.</p>
           </fieldset>
 
           <fieldset class="step" aria-describedby="timeError">
-            <legend class="step__label"><span>04</span>{{booking.time}}</legend>
-            <div class="slots" id="timeSlots" aria-live="polite" aria-busy="false"><p class="hint">{{booking.time_hint}}</p></div>
+            <legend class="step__label"><span>04</span>Orario</legend>
+            <div class="slots" id="timeSlots" aria-live="polite" aria-busy="false"><p class="hint">Scegli un giorno per vedere gli orari.</p></div>
             <p class="field-error" id="timeError" hidden></p>
           </fieldset>
 
           <div class="step">
-            <label class="step__label" for="bookingNotes"><span>05</span>{{booking.notes}} <small>{{booking.notes_optional}}</small></label>
-            <textarea class="input" id="bookingNotes" name="notes" rows="3" maxlength="500" placeholder="{{booking.notes_placeholder}}" aria-describedby="notesCount"></textarea>
+            <label class="step__label" for="bookingNotes"><span>05</span>Note <small>facoltative</small></label>
+            <textarea class="input" id="bookingNotes" name="notes" rows="3" maxlength="500" placeholder="Un seggiolone, un’intolleranza, un tavolo all’aperto…" aria-describedby="notesCount"></textarea>
             <p class="hint hint--right" id="notesCount">0 / 500</p>
           </div>
 
           <fieldset class="step">
-            <legend class="step__label"><span>06</span>{{booking.contact}}</legend>
+            <legend class="step__label"><span>06</span>A nome di</legend>
             <div class="field">
-              <label for="bookingName">{{booking.name}}</label>
+              <label for="bookingName">Nome e cognome</label>
               <input class="input" id="bookingName" name="name" type="text" autocomplete="name" maxlength="80" required aria-describedby="nameError">
               <p class="field-error" id="nameError" hidden></p>
             </div>
             <div class="field">
-              <label for="bookingPhone">{{booking.phone}}</label>
+              <label for="bookingPhone">Telefono</label>
               <input class="input" id="bookingPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="24" required aria-describedby="phoneError phoneHint">
-              <p class="hint" id="phoneHint">{{booking.phone_hint}}</p>
+              <p class="hint" id="phoneHint">Se non lasci l’email, la conferma arriva con un SMS a questo numero.</p>
               <p class="field-error" id="phoneError" hidden></p>
             </div>
             <div class="field">
-              <label for="bookingEmail">{{booking.email}} <small>{{booking.optional}}</small></label>
+              <label for="bookingEmail">Email <small>facoltativa</small></label>
               <input class="input" id="bookingEmail" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" spellcheck="false" aria-describedby="emailError emailHint">
-              <p class="hint" id="emailHint">{{booking.email_hint}}</p>
+              <p class="hint" id="emailHint">Se la indichi, la conferma arriva per email.</p>
               <p class="field-error" id="emailError" hidden></p>
             </div>
             <label class="check">
               <input type="checkbox" id="bookingConsent" name="consent">
               <span class="check__box" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>
-              <span class="check__text">{{booking.consent}} <a href="{{prefix}}privacy.html" target="_blank" rel="noopener">{{booking.privacy_link}}</a></span>
+              <span class="check__text">Voglio ricevere per email o SMS la conferma e gli aggiornamenti su questa prenotazione. <a href="/privacy.html" target="_blank" rel="noopener">Informativa privacy</a></span>
             </label>
           </fieldset>
 
@@ -566,26 +591,26 @@
 
         <section class="success" id="bookingSuccess" hidden tabindex="-1" aria-labelledby="successTitle">
           <svg class="success__mark" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24"/><path d="m15.5 26.5 7 7 14-15"/></svg>
-          <p class="drawer__kicker">{{booking.sent}}</p>
-          <h3 id="successTitle">{{booking.success_title}}</h3>
+          <p class="drawer__kicker">Richiesta inviata</p>
+          <h3 id="successTitle">Ci vediamo al Marè.</h3>
           <dl class="success__recap" id="successRecap"></dl>
           <div class="ref">
-            <span class="ref__label">{{booking.code}}</span>
+            <span class="ref__label">Codice</span>
             <strong class="ref__code" id="successRef">MARE-000000</strong>
-            <button class="copy-btn" type="button" data-copy-from="#successRef"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>{{ui.copy}}</span></button>
+            <button class="copy-btn" type="button" data-copy-from="#successRef"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copia</span></button>
           </div>
           <p class="hint" id="successNote"></p>
           <div class="success__actions">
-            <button class="btn btn--outline" type="button" id="addToCalendar"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg><span class="btn__label">{{booking.add_calendar}}</span></button>
-            <button class="btn btn--outline" type="button" id="printBooking"><svg class="icon" aria-hidden="true"><use href="#i-print"/></svg><span class="btn__label">{{booking.print}}</span></button>
+            <button class="btn btn--outline" type="button" id="addToCalendar"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg><span class="btn__label">Aggiungi al calendario</span></button>
+            <button class="btn btn--outline" type="button" id="printBooking"><svg class="icon" aria-hidden="true"><use href="#i-print"/></svg><span class="btn__label">Stampa</span></button>
           </div>
-          <button class="inline-link" type="button" id="newBooking">{{booking.new}}</button>
+          <button class="inline-link" type="button" id="newBooking">Fai un’altra prenotazione</button>
         </section>
       </div>
 
       <footer class="drawer__foot" id="drawerFoot">
-        <p class="drawer__summary" id="bookingSummary" aria-live="polite">{{booking.summary_default}}</p>
-        <button class="btn btn--solid btn--block" type="submit" form="bookingForm" id="bookingSubmit"><span class="btn__label">{{booking.submit}}</span><span class="spinner" aria-hidden="true"></span></button>
+        <p class="drawer__summary" id="bookingSummary" aria-live="polite">Scegli giorno e orario</p>
+        <button class="btn btn--solid btn--block" type="submit" form="bookingForm" id="bookingSubmit"><span class="btn__label">Invia la richiesta</span><span class="spinner" aria-hidden="true"></span></button>
       </footer>
     </div>
   </dialog>
