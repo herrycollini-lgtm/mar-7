@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="{{lang}}" data-page="privacy">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{privacy.title}} | Bagno Marè</title>
+  <meta name="description" content="{{privacy.description}}">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#edf2f4">
+  <link rel="canonical" href="__ORIGIN__{{prefix}}privacy.html">
+{{{alternates}}}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..600&family=Jost:wght@300..600&display=swap">
+  <link rel="stylesheet" href="/styles.css?v={{v.styles}}">
+  <script src="/boot.js?v={{v.boot}}"></script>
+  <script src="/app.js?v={{v.app}}" defer></script>
+  <script type="application/json" id="i18n">{{{js_json}}}</script>
+</head>
+<body>
+{{> sprite}}
+  <a class="skip-link" href="#contenuto">{{a11y.skip}}</a>
+  <header class="site-header is-scrolled" id="siteHeader">
+    <div class="site-header__inner">
+      <a class="wordmark" href="{{prefix}}">Marè<span class="wordmark__place">Cesenatico</span></a>
+      <div class="header-tools">
+{{{lang_switch}}}
+        <button class="tool-btn tool-btn--icon" type="button" id="themeToggle" aria-label="{{a11y.theme_dark}}" aria-pressed="false">
+          <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"/></svg>
+          <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        </button>
+        <a class="tool-btn" href="{{prefix}}">{{privacy.back}}</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenuto" tabindex="-1" class="legal wrap">
+    <p class="legal__draft">{{privacy.draft}}</p>
+    <p class="sec-index">Bagno Marè · Cesenatico</p>
+    <h1>{{privacy.title}}</h1>
+    <p class="legal__lead">{{privacy.lead}}</p>
+
+    <h2>{{privacy.h_owner}}</h2>
+    <p>{{privacy.owner}}</p>
+
+    <h2>{{privacy.h_data}}</h2>
+    <p>{{privacy.data}}</p>
+
+    <h2>{{privacy.h_purpose}}</h2>
+    <ul>
+      <li>{{privacy.purpose_booking}}</li>
+      <li>{{privacy.purpose_messages}}</li>
+      <li>{{privacy.purpose_security}}</li>
+    </ul>
+
+    <h2>{{privacy.h_providers}}</h2>
+    <p>{{privacy.providers}}</p>
+
+    <h2>{{privacy.h_retention}}</h2>
+    <p>{{privacy.retention}}</p>
+
+    <h2>{{privacy.h_rights}}</h2>
+    <p>{{privacy.rights}}</p>
+
+    <p class="legal__updated">{{footer.updated}} <time datetime="2026-10-02">{{footer.updated_date}}</time></p>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
