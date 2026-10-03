@@ -1,0 +1,25 @@
+{
+  "days": ["lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"],
+  "months": ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"],
+  "date_long": "{weekday} {day} {month}",
+  "date_short": "{day}/{month}",
+  "guests_one": "1 persona",
+  "guests_many": "{n} persone",
+  "services": {"pranzo": "pranzo", "cena": "cena"},
+  "reason_line": "Motivo: {reason}.",
+  "conferma": {
+    "subject": "Prenotazione confermata · Bagno Marè",
+    "email": "Ciao {name},\n\nla tua prenotazione al Bagno Marè è confermata.\n\nGiorno: {date}\nOra: {time}\nPersone: {count}\nCodice: {code}\n\nCi trovi in {address}.\nPer cambiare o annullare chiamaci al {phone}.\n\nA presto,\nBagno Marè",
+    "sms": "Bagno Marè: prenotazione confermata per {date_short} alle {time}, {guests}. Codice {code}. Molo di Levante 74, Cesenatico. Per modifiche {phone}"
+  },
+  "rifiuto": {
+    "subject": "La tua richiesta al Bagno Marè",
+    "email": "Ciao {name},\n\npurtroppo non possiamo accoglierti per {service} di {date} alle {time}.\n{reason_line}\n\nPuoi scegliere un'altra data sul sito oppure chiamarci al {phone}: cerchiamo insieme un'alternativa.\n\nCodice della richiesta: {code}\n\nUn saluto,\nBagno Marè",
+    "sms": "Bagno Marè: non possiamo accoglierti il {date_short} alle {time}. {reason_line} Scegli un'altra data sul sito o chiamaci al {phone}."
+  },
+  "annullamento": {
+    "subject": "Prenotazione annullata · Bagno Marè",
+    "email": "Ciao {name},\n\nla tua prenotazione al Bagno Marè è stata annullata.\n\nGiorno: {date}\nOra: {time}\nPersone: {count}\nCodice: {code}\n{reason_line}\n\nPer qualsiasi chiarimento o per trovare un'altra data chiamaci al {phone}.\n\nCi scusiamo per il disagio,\nBagno Marè",
+    "sms": "Bagno Marè: la prenotazione {code} del {date_short} alle {time} è annullata. {reason_line} Per info chiamaci al {phone}."
+  }
+}

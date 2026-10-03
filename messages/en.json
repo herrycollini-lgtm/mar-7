@@ -1,0 +1,25 @@
+{
+  "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+  "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+  "date_long": "{weekday} {day} {month}",
+  "date_short": "{day}/{month}",
+  "guests_one": "1 guest",
+  "guests_many": "{n} guests",
+  "services": {"pranzo": "lunch", "cena": "dinner"},
+  "reason_line": "Reason: {reason}.",
+  "conferma": {
+    "subject": "Booking confirmed · Bagno Marè",
+    "email": "Hello {name},\n\nyour table at Bagno Marè is confirmed.\n\nDate: {date}\nTime: {time}\nGuests: {count}\nCode: {code}\n\nYou will find us at {address}.\nTo change or cancel, call us on +39 {phone}.\n\nSee you soon,\nBagno Marè",
+    "sms": "Bagno Marè: your table is confirmed for {date_short} at {time}, {guests}. Code {code}. Molo di Levante 74, Cesenatico. Changes: +39 {phone}"
+  },
+  "rifiuto": {
+    "subject": "Your request at Bagno Marè",
+    "email": "Hello {name},\n\nwe are sorry, we cannot welcome you for {service} on {date} at {time}.\n{reason_line}\n\nYou can choose another date on our website or call us on +39 {phone} and we will find an alternative together.\n\nRequest code: {code}\n\nKind regards,\nBagno Marè",
+    "sms": "Bagno Marè: sorry, we cannot welcome you on {date_short} at {time}. {reason_line} Choose another date online or call +39 {phone}."
+  },
+  "annullamento": {
+    "subject": "Booking cancelled · Bagno Marè",
+    "email": "Hello {name},\n\nyour booking at Bagno Marè has been cancelled.\n\nDate: {date}\nTime: {time}\nGuests: {count}\nCode: {code}\n{reason_line}\n\nFor any question or to find another date, call us on +39 {phone}.\n\nWe apologise for the inconvenience,\nBagno Marè",
+    "sms": "Bagno Marè: booking {code} for {date_short} at {time} is cancelled. {reason_line} Info: +39 {phone}."
+  }
+}

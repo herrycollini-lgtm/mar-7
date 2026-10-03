@@ -1,0 +1,25 @@
+{
+  "days": ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"],
+  "months": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
+  "date_long": "{weekday}, {day}. {month}",
+  "date_short": "{day}.{month}.",
+  "guests_one": "1 Person",
+  "guests_many": "{n} Personen",
+  "services": {"pranzo": "Mittagessen", "cena": "Abendessen"},
+  "reason_line": "Grund: {reason}.",
+  "conferma": {
+    "subject": "Reservierung bestätigt · Bagno Marè",
+    "email": "Hallo {name},\n\nIhr Tisch im Bagno Marè ist bestätigt.\n\nDatum: {date}\nUhrzeit: {time}\nPersonen: {count}\nCode: {code}\n\nSie finden uns hier: {address}.\nFür Änderungen oder Stornierungen rufen Sie uns an: +39 {phone}.\n\nBis bald,\nBagno Marè",
+    "sms": "Bagno Marè: Ihr Tisch am {date_short} um {time} ist bestätigt, {guests}. Code {code}. Molo di Levante 74, Cesenatico. Änderungen: +39 {phone}"
+  },
+  "rifiuto": {
+    "subject": "Ihre Anfrage im Bagno Marè",
+    "email": "Hallo {name},\n\nleider können wir Sie am {date} um {time} nicht zum {service} empfangen.\n{reason_line}\n\nSie können auf unserer Website ein anderes Datum wählen oder uns unter +39 {phone} anrufen. Gemeinsam finden wir eine Alternative.\n\nCode der Anfrage: {code}\n\nFreundliche Grüße,\nBagno Marè",
+    "sms": "Bagno Marè: leider können wir Sie am {date_short} um {time} nicht empfangen. {reason_line} Neues Datum online oder Anruf: +39 {phone}."
+  },
+  "annullamento": {
+    "subject": "Reservierung storniert · Bagno Marè",
+    "email": "Hallo {name},\n\nIhre Reservierung im Bagno Marè wurde storniert.\n\nDatum: {date}\nUhrzeit: {time}\nPersonen: {count}\nCode: {code}\n{reason_line}\n\nBei Fragen oder für ein neues Datum rufen Sie uns an: +39 {phone}.\n\nWir bitten um Entschuldigung,\nBagno Marè",
+    "sms": "Bagno Marè: Reservierung {code} am {date_short} um {time} ist storniert. {reason_line} Info: +39 {phone}."
+  }
+}

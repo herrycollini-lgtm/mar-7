@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#edf2f4">
+  <meta name="description" content="Bagno Marè, Cesenatico. Una giornata al mare, una tavola da condividere, il piacere di fermarsi.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Bagno Marè">
+  <meta property="og:title" content="Bagno Marè | Cesenatico">
+  <meta property="og:description" content="Una giornata al mare, una tavola da condividere, il piacere di fermarsi.">
+  <title>Bagno Marè | Cesenatico</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+  <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
+
+  <header class="site-header" id="inizio">
+    <a class="wordmark" href="#inizio" aria-label="Bagno Marè, inizio pagina">marè<span>·</span></a>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+      <span class="menu-toggle-label">Menu</span>
+      <span class="menu-toggle-lines" aria-hidden="true"><i></i><i></i></span>
+    </button>
+    <nav class="primary-nav" id="primaryNav" aria-label="Navigazione principale">
+      <a href="#luogo">Il luogo</a>
+      <a href="#servizi">Spiaggia</a>
+      <a href="#menu">Menu</a>
+      <a href="#galleria">Immagini</a>
+      <a href="#faq">Informazioni</a>
+      <a class="nav-booking" href="#prenota">Prenota <span aria-hidden="true">↗</span></a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-text-button" id="searchToggle" type="button" aria-expanded="false" aria-controls="siteSearch">Cerca</button>
+      <details class="language-menu" id="languageMenu">
+        <summary id="languageSummary" aria-label="Cambia lingua"><span id="languageCode">IT</span><span class="language-chevron" aria-hidden="true">⌄</span></summary>
+        <div class="language-options" role="group" aria-label="Seleziona lingua">
+          <button type="button" data-language="it" lang="it" aria-pressed="true">Italiano</button>
+          <button type="button" data-language="en" lang="en" aria-pressed="false">English</button>
+          <button type="button" data-language="fr" lang="fr" aria-pressed="false">Français</button>
+          <button type="button" data-language="de" lang="de" aria-pressed="false">Deutsch</button>
+          <button type="button" data-language="es" lang="es" aria-pressed="false">Español</button>
+        </div>
+      </details>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Attiva tema scuro" aria-pressed="false"><span aria-hidden="true">◐</span></button>
+    </div>
+    <form class="site-search" id="siteSearch" role="search" hidden>
+      <label for="searchInput">Cerca nel sito</label>
+      <div class="search-row">
+        <input id="searchInput" type="search" placeholder="Es. prenotazioni, cucina…" autocomplete="off">
+        <button class="button button-dark" type="submit">Cerca</button>
+      </div>
+      <div class="search-results" id="searchResults" aria-live="polite"></div>
+    </form>
+  </header>
+
+  <main id="contenuto">
+    <section class="hero" aria-labelledby="heroTitle">
+      <img class="hero-image" src="/assets/MARE_180619_044-scaled-374x561.jpg" alt="Il passaggio tra gli ombrelloni verso il mare" fetchpriority="high" decoding="async">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">Cesenatico · Riviera Adriatica</p>
+        <h1 id="heroTitle">Il mare,<br>con il suo tempo.</h1>
+        <p class="hero-copy">Una giornata da vivere senza fretta.<br>Il resto lo fa il mare.</p>
+        <a class="button button-light" href="#prenota">Prenota un tavolo <span aria-hidden="true">↗</span></a>
+      </div>
+      <span class="hero-index" aria-hidden="true">44°12′ N &nbsp; 12°24′ E</span>
+      <a class="hero-scroll" href="#luogo"><span aria-hidden="true">↓</span> Scopri Marè</a>
+    </section>
+
+    <section class="intro section-pad" id="luogo">
+      <div class="intro-kicker">
+        <p class="eyebrow">Bagno Marè</p>
+        <p class="intro-number">01 / 04</p>
+      </div>
+      <div class="intro-copy">
+        <h2>Una pausa<br>vista mare.</h2>
+        <div class="intro-detail">
+          <p>Al Bagno Marè, a Cesenatico, la giornata prende il ritmo della spiaggia e si allunga volentieri fino a tavola.</p>
+          <a class="text-link" href="#galleria">Entra nell’atmosfera <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="place-section section-pad" aria-labelledby="placeTitle">
+      <div class="place-photo place-photo-main">
+        <img src="/assets/mare-spiaggia-stabilimento-674x600.jpg" alt="Le cabine del Bagno Marè sulla spiaggia" loading="lazy" decoding="async">
+        <span class="photo-caption">La spiaggia, ogni giorno</span>
+      </div>
+      <div class="place-note">
+        <p class="eyebrow">Il luogo</p>
+        <h2 id="placeTitle">La luce cambia.<br>Il mare resta.</h2>
+        <p>Il legno chiaro, l’aria salmastra, la linea dell’orizzonte. Un luogo semplice da abitare, dalla prima luce fino a sera.</p>
+        <a class="text-link" href="#prenota">Organizza la tua visita <span aria-hidden="true">↗</span></a>
+        <div class="place-photo place-photo-small">
+          <img src="/assets/mare-sup-674x833.jpg" alt="Tavole SUP sulla spiaggia del Bagno Marè" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section section-pad" id="servizi" aria-labelledby="servicesTitle">
+      <header class="services-heading">
+        <div>
+          <p class="eyebrow">La spiaggia · Servizi</p>
+          <h2 id="servicesTitle">Tutto quello che serve,<br>con spazio intorno.</h2>
+        </div>
+        <div class="services-lead">
+          <p>Ombrelloni ben distanziati, docce calde, campi in sabbia e un bar sempre aperto: la spiaggia del Marè è pensata per stare comodi dal mattino al tramonto.</p>
+          <dl class="services-facts">
+            <div><dt>4,5 m</dt><dd>tra un ombrellone e l’altro</dd></div>
+            <div><dt>8:00–18:00</dt><dd>orario della spiaggia</dd></div>
+            <div><dt>2 campi</dt><dd>beach volley e beach soccer</dd></div>
+          </dl>
+        </div>
+      </header>
+
+      <div class="services-groups">
+        <section class="service-group" aria-labelledby="servicesBeach">
+          <h3 id="servicesBeach"><span>01</span> In spiaggia</h3>
+          <ul class="service-list">
+            <li class="service-item"><svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 0 1 18 0Z"/><path d="M12 3v1.5M12 12v7a2 2 0 0 1-4 0"/></svg><div><h4>Ombrelloni distanziati</h4><p>File parallele al mare, con oltre 4,5 metri tra una postazione e l’altra.</p></div></li>
+            <li class="service-item"><svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 15h12l5-6"/><path d="M6 15l-2 4M15 15l2 4"/><circle cx="7" cy="9" r="2"/></svg><div><h4>Lettini in prima fila</h4><p>Sulla battigia, per chi vuole il mare a un passo. In bassa stagione sono gratuiti.</p><span class="service-tag">A pagamento</span></div></li>
+            <li class="service-item"><svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20 12 4l9 16Z"/><path d="M9 20l3-6 3 6"/></svg><div><h4>Tende Versilia</h4><p>Un’ombra ampia e riparata, comoda per famiglie e gruppi.</p><span class="service-tag">A pagamento</span></div></li>
+            <li class="service-item"><svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="1"/><path d="M12 3.5v17M10 12h.01M14 12h.01"/></svg><div><h4>Cabine e spogliatoi</h4><p>Attrezzati anche per persone con disabilità, su una spiaggia accessibile.</p></div></li>
+          </ul>
+        </section>
+
+        <section class="service-group" aria-labelledby="servicesComfort">
+          <h3 id="servicesComfort"><span>02</span> Comfort</h3>
+          <ul class="service-list">
+            <li class="service-item"><svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V8a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4"/><path d="M9.5 9h7"/><path d="M11 13v1M13 13v2M15 13v1M12 17v1M14 17v1"/></svg><div><h4>Docce calde</h4><p>Acqua tiepida inclusa; docce calde con temperatura regolabile.</p></div></li>
+            <li class="service-item"><svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 9a14 14 0 0 1 19 0M5.5 12.5a9.5 9.5 0 0 1 13 0M8.8 16a5 5 0 0 1 6.4 0"/><path d="M12 19.5h.01"/></svg><div><h4>Wi-Fi gratuito</h4><p>Connessione disponibile in spiaggia e al bar.</p><span class="service-tag is-included">Incluso</span></div></li>
+            <li class="service-item"><svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9.5" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3M12 15v2"/></svg><div><h4>Cassette di sicurezza</h4><p>Per lasciare al sicuro i valori mentre sei in acqua.</p><span class="service-tag">A pagamento</span></div></li>
+            <li class="service-item"><svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9h16M8.5 4v5"/></svg><div><h4>Materassini e kit bagno</h4><p>Materassini per il lettino e prodotti da bagno su richiesta.</p><span class="service-tag">A pagamento</span></div></li>
+          </ul>
+        </section>
+
+        <section class="service-group" aria-labelledby="servicesSport">
+          <h3 id="servicesSport"><span>03</span> Sport e gioco</h3>
+          <ul class="service-list">
+            <li class="service-item"><svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a13 13 0 0 0 0 18M3.6 9.5c5 1.2 11.8 1.2 16.8 0M3.8 15c5-1.1 11.4-1.1 16.4 0"/></svg><div><h4>Beach volley e beach soccer</h4><p>Campi in sabbia con palloni e racchette a disposizione.</p><span class="service-tag is-included">Incluso</span></div></li>
+            <li class="service-item"><svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 18c2 0 2-1.5 4-1.5S8 18 10 18s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"/><path d="M6 13.5 17.5 5"/><path d="M15 4.5l3.5.2-.4 3.5"/></svg><div><h4>Noleggio SUP</h4><p>Tavole da stand up paddle per esplorare la costa con il mare calmo.</p><span class="service-tag">A pagamento</span></div></li>
+            <li class="service-item"><svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5.5" r="2.5"/><path d="M12 8v7M7.5 11h9M9 21l3-6 3 6"/></svg><div><h4>Area giochi</h4><p>Uno spazio per i più piccoli, con il calcio balilla per tutti.</p><span class="service-tag is-included">Incluso</span></div></li>
+            <li class="service-item"><svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="12.5" rx="1.5"/><path d="M8 21h8M12 17v4"/></svg><div><h4>Sky Sport</h4><p>Le partite e i grandi eventi sportivi in diretta.</p><span class="service-tag is-included">Incluso</span></div></li>
+          </ul>
+        </section>
+
+        <section class="service-group" aria-labelledby="servicesWellbeing">
+          <h3 id="servicesWellbeing"><span>04</span> Pausa e benessere</h3>
+          <ul class="service-list">
+            <li class="service-item"><svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 12V6.5a1.5 1.5 0 0 1 3 0V11M10 11V5a1.5 1.5 0 0 1 3 0v6M13 11V6.5a1.5 1.5 0 0 1 3 0V13c0 4-2.5 7.5-6 7.5-3 0-4.6-1.8-5.6-4.6l-1-2.9a1.5 1.5 0 0 1 2.8-1L7 14"/></svg><div><h4>Trattamenti shiatsu</h4><p>Un massaggio rilassante a pochi passi dall’ombrellone.</p><span class="service-tag">A pagamento</span></div></li>
+            <li class="service-item"><svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h12v4a6 6 0 0 1-12 0Z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3.5v2.5M11 3.5v2.5M14 3.5v2.5"/></svg><div><h4>Bar tutto il giorno</h4><p>Caffè, drink e cocktail dal mattino al tramonto.</p></div></li>
+            <li class="service-item"><svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20c0-8.5 5.5-15 15-15 0 10-6 15.5-14 15.5"/><path d="M5 20c3-4.5 6.5-7.5 10.5-9.5"/></svg><div><h4>Una spiaggia sostenibile</h4><p>Energia dal fotovoltaico, acqua piovana recuperata per l’irrigazione e materiali riciclati o biologici.</p></div></li>
+          </ul>
+        </section>
+      </div>
+      <p class="services-note">Servizi e tariffe possono variare durante la stagione. Per ombrellone, lettini e tende rivolgiti direttamente alla spiaggia.</p>
+    </section>
+
+    <section class="table-section" id="tavola" aria-labelledby="tableTitle">
+      <div class="table-copy section-pad">
+        <p class="eyebrow light">A tavola</p>
+        <h2 id="tableTitle">Il piacere<br>di fermarsi.</h2>
+        <p>Un pranzo con il mare davanti. Una cena che si prende il suo tempo. Scegli il momento, al resto pensiamo insieme.</p>
+        <a class="button button-light" href="#prenota">Scegli quando venire <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="table-image">
+        <img src="/assets/cucina-600x720.jpg" alt="Un piatto preparato nella cucina del Bagno Marè" loading="lazy" decoding="async">
+      </div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu" aria-labelledby="menuTitle">
+      <header class="menu-masthead">
+        <div><p class="eyebrow">La carta · 2026</p><h2 id="menuTitle">Dal primo caffè<br>all’ultimo calice.</h2></div>
+        <p class="menu-masthead-note">Ogni momento ha il suo ritmo. Una carta da leggere con calma, tra il forno del mattino, la cucina di mare e la sera.</p>
+      </header>
+      <div class="menu-story">
+        <p class="eyebrow">La cucina del Marè</p>
+        <p>Il pescato e alcune proposte seguono il mercato; il pane e i lievitati nascono dal nostro forno. Qui trovi le carte 2026, raccolte in un unico percorso.</p>
+      </div>
+      <nav class="menu-nav" aria-label="Salta alla sezione del menu">
+        <a href="#menu-colazione"><span>01</span> Colazione</a>
+        <a href="#menu-pranzo-cena"><span>02</span> Pranzo e cena</a>
+        <a href="#menu-aperitivo"><span>03</span> Aperitivo</a>
+        <a href="#menu-vini"><span>04</span> Vini</a>
+      </nav>
+
+      <article class="menu-chapter" id="menu-colazione" aria-labelledby="breakfastTitle">
+        <header class="menu-chapter-heading"><div><p class="eyebrow">01 / Il mattino</p><h3 id="breakfastTitle">Colazione</h3></div><p class="menu-hours">Dalle 8:30 alle 12:00</p></header>
+        <section class="menu-category" aria-labelledby="breakfastYogurt">
+          <header class="menu-category-heading"><p class="eyebrow">Dal banco fresco</p><h4 id="breakfastYogurt">Yogurt bio</h4><p>Latte bio da piccoli produttori custodi di sapienza ancestrale. A richiesta anche senza lattosio.</p></header>
+          <div class="menu-entries">
+            <article class="menu-entry"><div><h5>Banana, mirtilli e Biscoff belga</h5></div><span class="menu-price">8 €</span></article>
+            <article class="menu-entry"><div><h5>Frutti rossi e granola</h5></div><span class="menu-price">8 €</span></article>
+            <article class="menu-entry"><div><h5>Dubai Chocolate</h5></div><span class="menu-price">8 €</span></article>
+          </div>
+        </section>
+        <section class="menu-category" aria-labelledby="breakfastToast">
+          <header class="menu-category-heading"><p class="eyebrow">Lievitazione naturale</p><h4 id="breakfastToast">Pane tostato</h4><p>Farine bio macinate a pietra. A scelta: burro d’arachidi e ciliegia in confettura; pomodoro, sale Maldon e olio romagnolo; avocado, lime, semi tostati e amaranto soffiato.</p></header>
+          <div class="menu-entries"><article class="menu-entry"><div><h5>Pane tostato</h5></div><span class="menu-price">8 €</span></article></div>
+        </section>
+        <section class="menu-category" aria-labelledby="breakfastSalato">
+          <header class="menu-category-heading"><p class="eyebrow">La colazione salata</p><h4 id="breakfastSalato">Salato</h4></header>
+          <div class="menu-entries">
+            <article class="menu-entry"><div><h5>Bagel al salmone affumicato</h5><p>Erba cipollina e robiola.</p></div><span class="menu-price">9 €</span></article>
+            <article class="menu-entry"><div><h5>Focaccia al rosmarino</h5><p>Mortadella artigianale e burrata.</p></div><span class="menu-price">9 €</span></article>
+            <article class="menu-entry"><div><h5>Sfogliata tiepida</h5><p>Culatello e taleggio.</p></div><span class="menu-price">8 €</span></article>
+            <article class="menu-entry"><div><h5>Croque Madame</h5><p>Pan brioche, prosciutto cotto, fontina, caciotta e uova al burro.</p></div><span class="menu-price">9 €</span></article>
+          </div>
+        </section>
+        <section class="menu-category menu-category-note" aria-labelledby="breakfastForno">
+          <header class="menu-category-heading"><p class="eyebrow">Ogni mattina</p><h4 id="breakfastForno">Dal nostro forno</h4><p>Torte, biscotti, pani e lievitati preparati ogni giorno. Al banco: cheesecake cocco e cioccolato, pastéis de nata, cioccolato, cookie, muffin e tenerina. Viennoiserie, bignè craquelin e sfogliate dolci e salate <span class="menu-inline-price">3 €</span>, fino a esaurimento.</p></header>
+        </section>
+      </article>
+
+      <figure class="menu-interlude menu-interlude-right"><div class="menu-interlude-image"><img src="/assets/croissant-674x407.jpg" alt="Un croissant appena preparato al Bagno Marè" loading="lazy" decoding="async"></div><figcaption><p class="eyebrow light">Il mattino, dal forno</p><p>Impasti e lievitati accompagnano la colazione, fino a esaurimento.</p></figcaption></figure>
+
+      <article class="menu-chapter" id="menu-pranzo-cena" aria-labelledby="lunchTitle">
+        <header class="menu-chapter-heading"><div><p class="eyebrow">02 / A tavola</p><h3 id="lunchTitle">Pranzo e cena</h3></div><p class="menu-hours">La cucina di mare</p></header>
+        <p class="menu-chapter-intro">Le carte 2026 fornite per pranzo e cena riportano la stessa selezione. Il pescato e alcune proposte seguono il mercato.</p>
+        <section class="menu-category" aria-labelledby="seaRawTitle">
+          <header class="menu-category-heading"><p class="eyebrow">01</p><h4 id="seaRawTitle">Il mare crudo</h4></header>
+          <div class="menu-entries">
+            <article class="menu-entry"><div><h5>Il Crudo</h5><p>Selezione di pesci al taglio, crostacei, ostriche e conchiglie secondo mercato. Senza glutine su richiesta.</p></div><span class="menu-price">39 €</span></article>
+            <article class="menu-entry"><div><h5>Marinato ma non troppo</h5><p>Pesci e crostacei, olio, agrumi, orto e soia. Senza glutine su richiesta.</p></div><span class="menu-price">35 €</span></article>
+            <article class="menu-entry"><div><h5>Ostriche</h5><p>Secondo mercato e stagionalità.</p></div><span class="menu-price">6 pz 24 €<br>12 pz 40 €</span></article>
+            <article class="menu-entry"><div><h5>Tartare di gamberi rosa</h5><p>Brioche tostata e robiola alle erbe.</p></div><span class="menu-price">24 €</span></article>
+            <article class="menu-entry"><div><h5>Cefalo nostrano affumicato</h5><p>Burrata e bottarga.</p></div><span class="menu-price">20 €</span></article>
+          </div>
+        </section>
+        <section class="menu-category" aria-labelledby="pastaTitle">
+          <header class="menu-category-heading"><p class="eyebrow">02</p><h4 id="pastaTitle">La pasta</h4><p>Pasta ripiena, fresca o trafilata, sempre fatta da noi. Il piatto POP del giorno.</p></header>
+          <div class="menu-entries">
+            <article class="menu-entry"><div><h5>Il piatto POP del giorno</h5></div><span class="menu-price">16 €</span></article>
+            <article class="menu-entry"><div><h5>Pappardelle</h5><p>Baccalà al rosmarino, cipolla dell’acqua e tartufo.</p></div><span class="menu-price">25 €</span></article>
+            <article class="menu-entry"><div><h5>Pasta e fagioli</h5><p>Passatelli, frutti di mare, crostacei e lardo di seppia.</p></div><span class="menu-price">23 €</span></article>
+            <article class="menu-entry"><div><h5>Spaghetti XXL</h5><p>Vongole sgusciate, olio selezione Alina e bruschetta tostata.</p></div><span class="menu-price">24 €</span></article>
+            <article class="menu-entry"><div><h5>Monfettini</h5><p>Seppie, vongole e inchiostro.</p></div><span class="menu-price">21 €</span></article>
+          </div>
+        </section>
+        <section class="menu-category" aria-labelledby="startersTitle">
+          <header class="menu-category-heading"><p class="eyebrow">03</p><h4 id="startersTitle">Gli antipasti</h4></header>
+          <div class="menu-entries">
+            <article class="menu-entry"><div><h5>Mazzancolle tiepide</h5><p>Patate all’olio e verdure iodate.</p></div><span class="menu-price">24 €</span></article>
+            <article class="menu-entry"><div><h5>Triglie spinate</h5><p>Carpione alla salvia, squacquerone, orto e pepe rosa.</p></div><span class="menu-price">22 €</span></article>
+            <article class="menu-entry"><div><h5>Bianchetti</h5><p>Uova al burro salato, caviale e bianchetti fritti.</p></div><span class="menu-price">20 €</span></article>
+          </div>
+        </section>
+        <section class="menu-category" aria-labelledby="seaTitle">
+          <header class="menu-category-heading"><p class="eyebrow">04</p><h4 id="seaTitle">Il mare</h4></header>
+          <div class="menu-entries">
+            <article class="menu-entry"><div><h5>Brodetto di pesci di riva</h5><p>All’aceto, con crostacei e scarpetta. Anche senza glutine.</p></div><span class="menu-price">30 €</span></article>
+            <article class="menu-entry"><div><h5>Rombo gratinato</h5><p>Carciofi ripieni, olive e limone.</p></div><span class="menu-price">38 €</span></article>
+            <article class="menu-entry"><div><h5>Spiedo di cefalo e mazzancolle</h5><p>Erbe di campo e piadina. Anche senza glutine.</p></div><span class="menu-price">24 €</span></article>
+            <article class="menu-entry"><div><h5>Fritto</h5><p>Calamari, crostacei e pesce azzurro.</p></div><span class="menu-price">24 €</span></article>
+          </div>
+        </section>
+        <section class="menu-category" aria-labelledby="beyondSeaTitle">
+          <header class="menu-category-heading"><p class="eyebrow">05</p><h4 id="beyondSeaTitle">Oltre il mare</h4></header>
+          <div class="menu-entries">
+            <article class="menu-entry"><div><h5>Cappelletti al prosciutto</h5><p>Panna, ponzu e parmigiano.</p></div><span class="menu-price">20 €</span></article>
+            <article class="menu-entry"><div><h5>Selezione di formaggi</h5><p>Formaggi di affinatori locali e fichi caramellati.</p></div><span class="menu-price">20 €</span></article>
+            <article class="menu-entry"><div><h5>Chianina brasata al Sangiovese</h5><p>Cremoso di patate al tartufo e chutney di zucca.</p></div><span class="menu-price">28 €</span></article>
+            <article class="menu-entry"><div><h5>Pane e burro</h5><p>Pani del nostro forno, olio romagnolo e burro salato.</p></div><span class="menu-price">5 €</span></article>
+          </div>
+        </section>
+        <p class="menu-footnote">Sotto Costa: una sequenza di piatti dalle piccole imbarcazioni della nostra marineria, uguale per tutto il tavolo. 65 € a persona, coperto incluso.<br>Coperto e servizio: 3,50 €. Le proposte possono variare secondo disponibilità e mercato.</p>
+      </article>
+
+      <figure class="menu-interlude menu-interlude-left"><div class="menu-interlude-image"><img src="/assets/275A0709-674x407.jpg" alt="Pasta fresca della cucina del Bagno Marè" loading="lazy" decoding="async"></div><figcaption><p class="eyebrow light">La cucina di mare</p><p>Una carta che segue il pescato, il mercato e la stagione.</p></figcaption></figure>
+
+      <article class="menu-chapter" id="menu-aperitivo" aria-labelledby="aperitivoTitle">
+        <header class="menu-chapter-heading"><div><p class="eyebrow">03 / L’ora blu</p><h3 id="aperitivoTitle">Aperitivo</h3></div><p class="menu-hours">Dal forno e dalla pescheria</p></header>
+        <section class="menu-category" aria-labelledby="testoTitle">
+          <header class="menu-category-heading"><p class="eyebrow">Da condividere</p><h4 id="testoTitle">Testo</h4></header>
+          <div class="menu-entries">
+            <article class="menu-entry"><div><h5>Testo · regular</h5><p>Salumi romagnoli, formaggi e giardiniera al pepe rosa, con la nostra focaccia.</p></div><span class="menu-price">15 €</span></article>
+            <article class="menu-entry"><div><h5>Testo · XL</h5><p>Una pizza a scelta, salumi, formaggi e giardiniera al pepe rosa, hummus, erbe, olive e loomi, con la nostra focaccia.</p></div><span class="menu-price">23 €</span></article>
+          </div>
+        </section>
+        <section class="menu-category" aria-labelledby="pizzaTitle">
+          <header class="menu-category-heading"><p class="eyebrow">Dal forno</p><h4 id="pizzaTitle">Pizza al padellino</h4></header>
+          <div class="menu-entries">
+            <article class="menu-entry"><div><h5>Bianca</h5><p>Origano, rosmarino, sale Maldon e olio.</p></div><span class="menu-price">4 €</span></article>
+            <article class="menu-entry"><div><h5>Bologna–Putignano</h5><p>Mortadella, burrata e rosmarino.</p></div><span class="menu-price">7,50 €</span></article>
+            <article class="menu-entry"><div><h5>Marinara</h5><p>Salsa marinara, pomodori marinati e acciughe.</p></div><span class="menu-price">8,50 €</span></article>
+            <article class="menu-entry"><div><h5>Orto</h5><p>Pomodori, pesto d’erbe e scaglie di parmigiano.</p></div><span class="menu-price">7,50 €</span></article>
+          </div>
+        </section>
+        <section class="menu-category" aria-labelledby="plateauTitle">
+          <header class="menu-category-heading"><p class="eyebrow">Il mare crudo</p><h4 id="plateauTitle">Plateau e pescato</h4></header>
+          <div class="menu-entries">
+            <article class="menu-entry"><div><h5>Plateau · regular</h5><p>3 ostriche, 3 crostacei e 3 conchiglie.</p></div><span class="menu-price">26 €</span></article>
+            <article class="menu-entry"><div><h5>Plateau · XL</h5><p>Tartare di crostacei; ostriche con panna acida e caviale; affumicato di mare, burrata e bottarga.</p></div><span class="menu-price">30 €</span></article>
+            <article class="menu-entry"><div><h5>Ostriche</h5></div><span class="menu-price">6 pz 22 €<br>12 pz 38 €</span></article>
+            <article class="menu-entry"><div><h5>Crostacei</h5></div><span class="menu-price">6 pz 25 €<br>12 pz 45 €</span></article>
+            <article class="menu-entry"><div><h5>Tartare di crostacei</h5><p>Brioche tostata e robiola.</p></div><span class="menu-price">18 €</span></article>
+            <article class="menu-entry"><div><h5>Cefalo nostrano affumicato</h5><p>Burrata, bottarga e soia.</p></div><span class="menu-price">18 €</span></article>
+            <article class="menu-entry"><div><h5>Caviale e burro salato</h5><p>10 g.</p></div><span class="menu-price">25 €</span></article>
+          </div>
+        </section>
+      </article>
+
+      <figure class="menu-interlude menu-interlude-right menu-interlude-wine"><div class="menu-interlude-image"><img src="/assets/IMG_1045-374x561.jpg" alt="Un calice versato al ristorante" loading="lazy" decoding="async"></div><figcaption><p class="eyebrow light">Per la sera</p><p>Bollicine, bianchi e rossi: la carta accompagna la tavola fino all’ultimo calice.</p></figcaption></figure>
+
+      <article class="menu-chapter menu-wine-chapter" id="menu-vini" aria-labelledby="wineTitle">
+        <header class="menu-chapter-heading"><div><p class="eyebrow">04 / La cantina</p><h3 id="wineTitle">Carta dei vini</h3></div><p class="menu-hours">Italia e dal mondo</p></header>
+        <p class="menu-chapter-intro">La carta completa comprende bollicine, bianchi e rossi. Apri il documento per consultare tutte le etichette.</p>
+        <details class="wine-preview"><summary>Consulta la carta completa · 31 pagine <span aria-hidden="true">＋</span></summary><iframe src="/assets/menus/carta-vini-2026.pdf#view=FitH" title="Carta dei vini Marè, edizione 2026" loading="lazy"></iframe></details>
+      </article>
+
+      <aside class="menu-allergens" id="menu-allergeni" aria-labelledby="allergensTitle">
+        <div class="allergen-card-mark" aria-hidden="true">i</div>
+        <div><p class="eyebrow">Informazioni alimentari</p><h3 id="allergensTitle">Allergeni</h3><p>Consulta il documento dedicato per allergeni e intolleranze. Per qualsiasi dubbio, chiedi al personale prima di ordinare.</p></div>
+        <a class="text-link" href="/assets/menus/allergeni-2026.pdf" download>Scarica il PDF allergeni <span aria-hidden="true">↓</span></a>
+      </aside>
+      <p class="menu-final-note">I prezzi sono in euro. Le proposte possono variare secondo disponibilità e mercato. In caso di allergie o intolleranze, consulta il PDF dedicato e informa il personale.</p>
+    </section>
+
+    <section class="evening-section section-pad" aria-labelledby="eveningTitle">
+      <div class="evening-copy">
+        <p class="eyebrow">Quando scende il sole</p>
+        <h2 id="eveningTitle">La sera<br>ha un’altra luce.</h2>
+        <p>Una tavola apparecchiata, il rumore delle onde poco più in là. Marè si veste piano, senza perdere la sua naturalezza.</p>
+        <a class="text-link" href="#prenota">Prenota per cena <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="evening-photo"><img src="/assets/MARE_140721_285-600x720.jpg" alt="La sala del ristorante al tramonto, affacciata sul mare" loading="lazy" decoding="async"></figure>
+      <figure class="evening-detail"><img src="/assets/IMG_1624-2-374x561.jpg" alt="Una tavola illuminata dalle candele" loading="lazy" decoding="async"><figcaption>Una sera al Marè</figcaption></figure>
+    </section>
+
+    <section class="gallery-section section-pad" id="galleria" aria-labelledby="galleryTitle">
+      <div class="section-heading">
+        <div><p class="eyebrow">Appunti di Marè</p><h2 id="galleryTitle">Un luogo da ricordare.</h2></div>
+        <p>La spiaggia, la cucina, le occasioni da condividere.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item gallery-tall"><img src="/assets/IMG_1045-374x561.jpg" alt="Un calice versato al ristorante" loading="lazy" decoding="async"><figcaption>Il brindisi</figcaption></figure>
+        <figure class="gallery-item"><img src="/assets/Foto_240-3-374x250.jpg" alt="Dettaglio degli interni del ristorante" loading="lazy" decoding="async"><figcaption>Gli spazi</figcaption></figure>
+        <figure class="gallery-item"><img src="/assets/MG_5615-374x249.jpg" alt="La sala apparecchiata per la sera" loading="lazy" decoding="async"><figcaption>La sera</figcaption></figure>
+        <figure class="gallery-item gallery-wide"><img src="/assets/Giulia-Masci-Wedding-13-2-374x560.jpg" alt="Una sala pronta per una cena speciale" loading="lazy" decoding="async"><figcaption>Le occasioni speciali</figcaption></figure>
+        <figure class="gallery-item"><img src="/assets/IMG_1616-2-374x249.jpg" alt="Fiori e luci sulla tavola" loading="lazy" decoding="async"><figcaption>La tavola</figcaption></figure>
+        <figure class="gallery-item"><img src="/assets/MARE_140721_087-374x561.jpg" alt="Un aperitivo al Bagno Marè" loading="lazy" decoding="async"><figcaption>L’aperitivo</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="booking-section section-pad" id="prenota" aria-labelledby="bookingTitle">
+      <div class="booking-intro">
+        <p class="eyebrow light">La tua tavola</p>
+        <h2 id="bookingTitle">Ci vediamo<br>al Marè.</h2>
+        <p>Scegli pranzo o cena, poi la data e l’orario che preferisci. La disponibilità viene aggiornata in tempo reale.</p>
+        <div class="booking-aside"><span>01</span><p>La richiesta viene registrata subito, ma non è una conferma definitiva. Se hai bisogno di conferma o di una modifica, contatta direttamente lo stabilimento.</p></div>
+      </div>
+      <form class="booking-form" id="bookingForm" novalidate>
+        <fieldset class="booking-step">
+          <legend><span class="step-number">1</span> Quando vuoi venire?</legend>
+          <div class="service-options">
+            <label class="service-option"><input type="radio" name="service" value="pranzo" checked><span>Pranzo</span></label>
+            <label class="service-option"><input type="radio" name="service" value="cena"><span>Cena</span></label>
+          </div>
+          <div class="form-grid">
+            <div class="field"><label class="field-label" for="bookingDate">Giorno</label><input id="bookingDate" name="date" type="date" required></div>
+            <div class="field"><label class="field-label" for="bookingGuests">Persone</label><input id="bookingGuests" name="guests" type="number" min="1" max="12" step="1" value="2" inputmode="numeric" required aria-describedby="guestsHint"><span class="field-hint" id="guestsHint">Per gruppi più numerosi contatta lo stabilimento.</span></div>
+          </div>
+        </fieldset>
+
+        <fieldset class="booking-step">
+          <legend><span class="step-number">2</span> Orario</legend>
+          <div class="time-options" id="timeOptions" aria-live="polite"><p class="form-hint">Seleziona una data per vedere gli orari disponibili.</p></div>
+          <p class="field-error" id="timeError" hidden></p>
+        </fieldset>
+
+        <fieldset class="booking-step">
+          <legend><span class="step-number">3</span> A nome di</legend>
+          <p class="step-hint">Il nome con cui ti accoglieremo al tavolo e un numero per contattarti se serve.</p>
+          <div class="form-grid">
+            <div class="field"><label class="field-label" for="bookingName">Nome e cognome</label><input id="bookingName" name="name" type="text" autocomplete="name" maxlength="80" placeholder="Es. Giulia Rossi" required aria-describedby="bookingNameError"><p class="field-error" id="bookingNameError" hidden></p></div>
+            <div class="field"><label class="field-label" for="bookingPhone">Telefono</label><input id="bookingPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="24" placeholder="+39 333 123 4567" required aria-describedby="bookingPhoneError"><p class="field-error" id="bookingPhoneError" hidden></p></div>
+          </div>
+          <div class="booking-honeypot" aria-hidden="true"><label for="bookingWebsite">Sito web</label><input id="bookingWebsite" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <div class="field field-notes">
+            <label class="field-label" for="bookingNotes">Note <small>Facoltative</small></label>
+            <textarea id="bookingNotes" name="notes" rows="3" maxlength="500" placeholder="Una richiesta per il tavolo? Scrivila qui." aria-describedby="characterCount"></textarea>
+            <span class="character-count" id="characterCount">0 / 500</span>
+          </div>
+        </fieldset>
+
+        <div class="booking-summary" aria-live="polite">
+          <p class="booking-summary-label">Il tuo tavolo</p>
+          <p class="booking-summary-text" id="bookingSummaryText">Scegli un orario per completare il riepilogo.</p>
+        </div>
+        <p class="form-message" id="bookingMessage" role="status" aria-live="polite"></p>
+        <button class="button button-submit" id="bookingSubmit" type="submit">Invia richiesta <span aria-hidden="true">↗</span></button>
+        <p class="form-footnote">La richiesta non è una conferma definitiva: il gestore la verifica e, se serve, ti contatta al numero indicato. Nome e telefono vengono usati solo per gestire la prenotazione.</p>
+      </form>
+    </section>
+
+    <section class="faq-section section-pad" id="faq" aria-labelledby="faqTitle">
+      <div class="faq-intro"><p class="eyebrow">Da sapere</p><h2 id="faqTitle">Qualche risposta,<br>prima di venire.</h2></div>
+      <div class="faq-list">
+        <details><summary>Come funziona la prenotazione?</summary><p>Scegli pranzo o cena, la data, il numero di persone e un orario disponibile, poi indica nome e telefono e invia la richiesta. La richiesta viene registrata subito, ma non equivale a una conferma definitiva: il gestore la verifica e può contattarti al numero indicato.</p></details>
+        <details><summary>Non vedo orari disponibili. Cosa significa?</summary><p>Può significare che gli orari non sono stati configurati per la data, che il servizio è terminato oppure che i coperti sono esauriti. Orari e capienze sono definiti dallo stabilimento.</p></details>
+        <details><summary>Siamo un gruppo numeroso: come facciamo?</summary><p>La prenotazione online è pensata per i tavoli più piccoli. Per gruppi numerosi, eventi privati o aziendali contatta direttamente lo stabilimento.</p></details>
+        <details><summary>Posso prenotare ombrellone e lettini da qui?</summary><p>No: questo modulo riguarda il ristorante. Per ombrellone, lettini e tende rivolgiti direttamente alla spiaggia.</p></details>
+        <details><summary>Posso aggiungere una nota?</summary><p>Sì. Puoi lasciare una richiesta utile per il tavolo, ad esempio un seggiolone o un’intolleranza da segnalare. Nome e telefono vanno indicati nei campi dedicati.</p></details>
+        <details><summary>Dove trovo il menù?</summary><p>La carta 2026 è consultabile nella sezione Menu. Per allergeni e intolleranze trovi il documento dedicato; se hai dubbi, chiedi al personale prima di ordinare.</p></details>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contatti" aria-labelledby="contactTitle">
+      <img src="/assets/IMG_1624-2-374x561.jpg" alt="La sala del ristorante illuminata la sera" loading="lazy" decoding="async">
+      <div class="contact-shade"></div>
+      <div class="contact-copy"><p class="eyebrow light">Bagno Marè · Cesenatico</p><h2 id="contactTitle">La prossima<br>bella giornata<br>comincia qui.</h2><a class="button button-light" href="#prenota">Prenota la tua tavola <span aria-hidden="true">↗</span></a></div>
+      <p class="contact-location">Cesenatico<br>Emilia-Romagna, Italia</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-wordmark" href="#inizio">marè<span>·</span></a>
+    <p class="footer-location">Bagno Marè · Cesenatico</p>
+    <p class="footer-updated">Orari e disponibilità sono definiti dallo stabilimento.</p>
+    <div class="footer-links"><a href="#menu">Menu</a><a href="#prenota">Prenota</a><a href="#faq">Informazioni</a><a href="/admin.html">Area gestione</a></div>
+    <p class="footer-credit">© <span id="currentYear">2026</span> Bagno Marè</p>
+  </footer>
+
+  <div class="floating-actions" id="floatingActions">
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Torna all’inizio"><span aria-hidden="true">↑</span></button>
+    <a class="floating-contact" href="#prenota" aria-label="Vai alle prenotazioni"><span>Prenota un tavolo</span><span class="floating-contact-icon" aria-hidden="true">↗</span></a>
+  </div>
+
+  <dialog class="confirmation-dialog" id="confirmationDialog" aria-labelledby="confirmationTitle">
+    <button class="dialog-close" id="closeConfirmation" type="button" aria-label="Chiudi">×</button>
+    <p class="eyebrow">Richiesta inviata</p>
+    <h2 id="confirmationTitle">Richiesta ricevuta.</h2>
+    <p id="confirmationSummary"></p>
+    <div class="reference-row"><span>Codice prenotazione</span><strong id="bookingReference"></strong><button id="copyReference" type="button" class="text-link">Copia</button></div>
+    <p class="confirmation-note">La richiesta è stata registrata. Per sapere se è confermata o chiedere una modifica, contatta direttamente lo stabilimento. Conserva il codice per i tuoi appunti.</p>
+    <div class="dialog-actions"><button class="button button-dark" id="printConfirmation" type="button">Stampa riepilogo</button><button class="button button-outline" id="finishConfirmation" type="button">Fatto</button></div>
+    <p class="copy-feedback" id="copyFeedback" aria-live="polite"></p>
+  </dialog>
+</body>
+</html>

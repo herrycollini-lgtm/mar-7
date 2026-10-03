@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="{{lang}}" data-page="site">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{meta.title}}</title>
+  <meta name="description" content="{{meta.description}}">
+  <meta name="theme-color" content="#edf2f4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1c1d2b" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="{{meta.og_locale}}">
+  <meta property="og:site_name" content="Bagno Marè">
+  <meta property="og:title" content="{{meta.og_title}}">
+  <meta property="og:description" content="{{meta.og_description}}">
+  <meta property="og:url" content="__ORIGIN__{{prefix}}">
+  <link rel="canonical" href="__ORIGIN__{{prefix}}">
+{{{alternates}}}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..600&family=Jost:wght@300..600&display=swap">
+  <link rel="stylesheet" href="/styles.css?v={{v.styles}}">
+  <link rel="preload" as="image" href="/assets/MARE_180619_044-scaled-374x561.jpg">
+  <script src="/boot.js?v={{v.boot}}"></script>
+  <script src="/app.js?v={{v.app}}" defer></script>
+  <!--structured-data-->
+  <script type="application/json" id="i18n">{{{js_json}}}</script>
+</head>
+<body>
+{{> sprite}}
+
+  <div class="intro-curtain" aria-hidden="true">
+    <span class="intro-curtain__word">Marè</span>
+    <span class="intro-curtain__line"></span>
+  </div>
+
+  <a class="skip-link" href="#contenuto">{{a11y.skip}}</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="site-header__inner">
+      <a class="wordmark" href="#inizio" aria-label="{{a11y.home}}">Marè<span class="wordmark__place">Cesenatico</span></a>
+      <nav class="main-nav" aria-label="{{a11y.nav}}">
+        <a href="#posto">{{nav.place}}</a>
+        <a href="#spiaggia">{{nav.beach}}</a>
+        <a href="#cucina">{{nav.kitchen}}</a>
+        <a href="#sera">{{nav.evening}}</a>
+        <a href="#faq">{{nav.info}}</a>
+        <a href="#contatti">{{nav.contacts}}</a>
+      </nav>
+      <div class="header-tools">
+        <button class="tool-btn" type="button" id="searchOpen" aria-haspopup="dialog" aria-controls="searchDialog">
+          <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+          <span class="tool-btn__label">{{nav.search}}</span>
+          <kbd class="tool-btn__kbd" aria-hidden="true">/</kbd>
+        </button>
+{{{lang_switch}}}
+        <button class="tool-btn tool-btn--icon" type="button" id="themeToggle" aria-label="{{a11y.theme_dark}}" aria-pressed="false">
+          <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"/></svg>
+          <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        </button>
+        <a class="btn btn--solid btn--small" href="#prenota" data-open-booking><span class="btn__label">{{nav.book}}</span></a>
+        <button class="menu-btn" type="button" id="menuOpen" aria-haspopup="dialog" aria-controls="mobileNav">
+          <span class="menu-btn__lines" aria-hidden="true"><i></i><i></i></span>
+          <span class="sr-only">{{a11y.open_menu}}</span>
+        </button>
+      </div>
+    </div>
+    <div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+  </header>
+
+  <main id="contenuto" tabindex="-1">
+
+    <div class="statusbar" id="statusBar">
+      <div class="wrap statusbar__inner">
+        <p class="statusbar__text" aria-live="polite"><span class="statusbar__dot" aria-hidden="true"></span><span id="statusText">{{status.fallback}}</span></p>
+        <a class="statusbar__link" href="#orari"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>{{status.hours_link}}</a>
+      </div>
+    </div>
+
+    <section class="hero" id="inizio" aria-labelledby="heroTitle">
+      <div class="wrap hero__grid">
+        <h1 class="hero__title" id="heroTitle"><span class="hero__word" aria-hidden="true"><span>M</span><span>a</span><span>r</span><span>è</span></span><span class="sr-only">{{hero.sr_title}}</span></h1>
+        <p class="hero__lead">{{hero.lead}}</p>
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#prenota" data-open-booking><span class="btn__label">{{nav.book_table}}</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="link-arrow" href="#cucina">{{hero.menu}} <svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></a>
+        </div>
+        <figure class="hero__main frame">
+          <img src="/assets/MARE_180619_044-scaled-374x561.jpg" width="374" height="561" alt="{{hero.img_main}}" fetchpriority="high">
+          <p class="hero__badge" id="weatherBadge"><span class="hero__badge-dot" aria-hidden="true"></span><span>Cesenatico, IT</span><span class="hero__badge-sep" aria-hidden="true">·</span><span id="weatherText">{{hero.vibe}}</span></p>
+        </figure>
+        <figure class="hero__aside frame">
+          <img src="/assets/mare-spiaggia-stabilimento-674x600.jpg" width="674" height="600" alt="{{hero.img_aside}}">
+        </figure>
+        <div class="hero__meta">
+          <span>Molo di Levante 74</span>
+          <span class="hero__coords">44°12′ N · 12°24′ E</span>
+          <a class="hero__scroll" href="#posto">{{hero.scroll}} <svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="place tone-shore" id="posto" aria-labelledby="placeTitle">
+      <div class="wrap place__grid">
+        <p class="sec-index">{{place.index}}</p>
+        <h2 class="place__statement" id="placeTitle" data-search data-search-section="{{sections.place}}">{{place.statement}}</h2>
+        <p class="place__text">{{place.text}}</p>
+        <ul class="place__words" aria-label="{{place.words_label}}">
+          <li>{{place.w1}}</li><li>{{place.w2}}</li><li>{{place.w3}}</li><li>{{place.w4}}</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="day tone-sand" id="giornata" aria-labelledby="dayTitle">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-index">{{day.index}}</p>
+          <div class="sec-head__main">
+            <h2 id="dayTitle">{{day.title}}</h2>
+            <p class="day__season" id="daySeason"></p>
+          </div>
+        </header>
+        <ol class="day__list">
+          <li class="day__stop" data-search data-search-section="{{sections.day}}"><time data-hour="spiaggia">8:00</time><h3>{{day.s1_title}}</h3><p>{{day.s1_text}}</p></li>
+          <li class="day__stop" data-search data-search-section="{{sections.day}}"><time data-hour="colazione">8:30</time><h3>{{day.s2_title}}</h3><p>{{day.s2_text}}</p></li>
+          <li class="day__stop" data-search data-search-section="{{sections.day}}"><time data-hour="pranzo">12:30</time><h3>{{day.s3_title}}</h3><p>{{day.s3_text}}</p></li>
+          <li class="day__stop" data-search data-search-section="{{sections.day}}"><time data-hour="aperitivo">18:30</time><h3>{{day.s4_title}}</h3><p>{{day.s4_text}}</p></li>
+          <li class="day__stop" data-search data-search-section="{{sections.day}}"><time data-hour="cena">19:30</time><h3>{{day.s5_title}}</h3><p>{{day.s5_text}}</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="beach tone-mist" id="spiaggia" aria-labelledby="beachTitle">
+      <div class="wrap beach__grid">
+        <figure class="beach__photo frame">
+          <img src="/assets/mare-sup-674x833.jpg" width="674" height="833" alt="{{beach.img}}" loading="lazy" decoding="async">
+          <figcaption>{{beach.caption}}</figcaption>
+        </figure>
+        <div class="beach__copy">
+          <p class="sec-index">{{beach.index}}</p>
+          <h2 id="beachTitle" data-search data-search-section="{{sections.beach}}">{{beach.title}}</h2>
+          <p>{{beach.text}}</p>
+          <dl class="figures">
+            <div><dt>4,5 m</dt><dd>{{beach.fig1}}</dd></div>
+            <div><dt id="beachHours">8 / 18</dt><dd>{{beach.fig2}}</dd></div>
+            <div><dt>2</dt><dd>{{beach.fig3}}</dd></div>
+          </dl>
+        </div>
+        <div class="services">
+          <div class="services__group">
+            <h3>{{beach.g1}}</h3>
+            <ul>
+              <li data-search data-search-section="{{sections.services}}">{{beach.g1_1}}</li>
+              <li data-search data-search-section="{{sections.services}}">{{beach.g1_2}}</li>
+              <li data-search data-search-section="{{sections.services}}">{{beach.g1_3}}</li>
+              <li data-search data-search-section="{{sections.services}}">{{beach.g1_4}}</li>
+            </ul>
+          </div>
+          <div class="services__group">
+            <h3>{{beach.g2}}</h3>
+            <ul>
+              <li data-search data-search-section="{{sections.services}}">{{beach.g2_1}}</li>
+              <li data-search data-search-section="{{sections.services}}">{{beach.g2_2}}</li>
+              <li data-search data-search-section="{{sections.services}}">{{beach.g2_3}}</li>
+              <li data-search data-search-section="{{sections.services}}">{{beach.g2_4}}</li>
+            </ul>
+          </div>
+          <div class="services__group">
+            <h3>{{beach.g3}}</h3>
+            <ul>
+              <li data-search data-search-section="{{sections.services}}">{{beach.g3_1}}</li>
+              <li data-search data-search-section="{{sections.services}}">{{beach.g3_2}}</li>
+              <li data-search data-search-section="{{sections.services}}">{{beach.g3_3}}</li>
+              <li data-search data-search-section="{{sections.services}}">{{beach.g3_4}}</li>
+            </ul>
+          </div>
+          <div class="services__group">
+            <h3>{{beach.g4}}</h3>
+            <ul>
+              <li data-search data-search-section="{{sections.services}}">{{beach.g4_1}}</li>
+              <li data-search data-search-section="{{sections.services}}">{{beach.g4_2}}</li>
+              <li data-search data-search-section="{{sections.services}}">{{beach.g4_3}}</li>
+            </ul>
+          </div>
+          <p class="services__note">{{beach.note}}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="kitchen tone-sand-deep" id="cucina" aria-labelledby="kitchenTitle">
+      <div class="wrap">
+        <div class="kitchen__intro">
+          <p class="sec-index">{{kitchen.index}}</p>
+          <h2 id="kitchenTitle" data-search data-search-section="{{sections.kitchen}}">{{kitchen.title}}</h2>
+          <p class="kitchen__text">{{kitchen.text}}</p>
+        </div>
+        <div class="kitchen__photos">
+          <figure class="kitchen__photo-a frame">
+            <img src="/assets/cucina-600x720.jpg" width="600" height="720" alt="{{kitchen.img_a}}" loading="lazy" decoding="async">
+          </figure>
+          <figure class="kitchen__photo-b frame">
+            <img src="/assets/275A0709-674x407.jpg" width="674" height="407" alt="{{kitchen.img_b}}" loading="lazy" decoding="async">
+            <figcaption>{{kitchen.caption_b}}</figcaption>
+          </figure>
+        </div>
+
+        <div class="dishes" id="menu" aria-labelledby="dishesTitle">
+          <header class="dishes__head">
+            <h3 id="dishesTitle">{{kitchen.dishes_title}}</h3>
+            <p>{{kitchen.dishes_note}}</p>
+          </header>
+          <ol class="dishes__list" id="dishList">
+            <li class="dish" data-preview="/assets/croissant-674x407.jpg" data-search data-search-section="{{sections.menu}}">
+              <span class="dish__moment">{{kitchen.d1_moment}}</span>
+              <span class="dish__name">{{kitchen.d1_name}}</span>
+              <span class="dish__desc">{{kitchen.d1_desc}}</span>
+              <span class="dish__price">3 €</span>
+              <img class="dish__thumb" src="/assets/croissant-674x407.jpg" alt="" loading="lazy" decoding="async" width="674" height="407">
+            </li>
+            <li class="dish" data-preview="/assets/cucina-600x720.jpg" data-search data-search-section="{{sections.menu}}">
+              <span class="dish__moment">{{kitchen.d2_moment}}</span>
+              <span class="dish__name">{{kitchen.d2_name}}</span>
+              <span class="dish__desc">{{kitchen.d2_desc}}</span>
+              <span class="dish__price">23 €</span>
+              <img class="dish__thumb" src="/assets/cucina-600x720.jpg" alt="" loading="lazy" decoding="async" width="600" height="720">
+            </li>
+            <li class="dish" data-preview="/assets/275A0709-674x407.jpg" data-search data-search-section="{{sections.menu}}">
+              <span class="dish__moment">{{kitchen.d3_moment}}</span>
+              <span class="dish__name">{{kitchen.d3_name}}</span>
+              <span class="dish__desc">{{kitchen.d3_desc}}</span>
+              <span class="dish__price">25 €</span>
+              <img class="dish__thumb" src="/assets/275A0709-674x407.jpg" alt="" loading="lazy" decoding="async" width="674" height="407">
+            </li>
+            <li class="dish" data-preview="/assets/SGA17_FOTO277-374x560.jpg" data-search data-search-section="{{sections.menu}}">
+              <span class="dish__moment">{{kitchen.d4_moment}}</span>
+              <span class="dish__name">{{kitchen.d4_name}}</span>
+              <span class="dish__desc">{{kitchen.d4_desc}}</span>
+              <span class="dish__price">30 €</span>
+              <img class="dish__thumb" src="/assets/SGA17_FOTO277-374x560.jpg" alt="" loading="lazy" decoding="async" width="374" height="560">
+            </li>
+            <li class="dish" data-preview="/assets/MARE_140721_087-374x561.jpg" data-search data-search-section="{{sections.menu}}">
+              <span class="dish__moment">{{kitchen.d5_moment}}</span>
+              <span class="dish__name">{{kitchen.d5_name}}</span>
+              <span class="dish__desc">{{kitchen.d5_desc}}</span>
+              <span class="dish__price">{{kitchen.d5_price}}</span>
+              <img class="dish__thumb" src="/assets/MARE_140721_087-374x561.jpg" alt="" loading="lazy" decoding="async" width="374" height="561">
+            </li>
+            <li class="dish" data-preview="/assets/IMG_1045-374x561.jpg" data-search data-search-section="{{sections.menu}}">
+              <span class="dish__moment">{{kitchen.d6_moment}}</span>
+              <span class="dish__name">{{kitchen.d6_name}}</span>
+              <span class="dish__desc">{{kitchen.d6_desc}}</span>
+              <span class="dish__price">{{kitchen.d6_price}}</span>
+              <img class="dish__thumb" src="/assets/IMG_1045-374x561.jpg" alt="" loading="lazy" decoding="async" width="374" height="561">
+            </li>
+          </ol>
+          <figure class="dishes__preview" aria-hidden="true">
+            <div class="dishes__stage" id="dishStage"></div>
+            <figcaption class="dishes__caption"><span id="dishCaptionMoment">{{kitchen.d1_moment}}</span><span id="dishCaptionName">{{kitchen.d1_name}}</span></figcaption>
+          </figure>
+        </div>
+
+        <div class="menu-files" data-search data-search-section="{{sections.menu}}">
+          <p class="menu-files__label">{{kitchen.files_label}}</p>
+          <ul>
+            <li><a href="/assets/menus/colazione-2026.pdf" target="_blank" rel="noopener" hreflang="it">{{kitchen.file_breakfast}} <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
+            <li><a href="/assets/menus/pranzo-2026.pdf" target="_blank" rel="noopener" hreflang="it">{{kitchen.file_lunch}} <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
+            <li><a href="/assets/menus/cena-2026.pdf" target="_blank" rel="noopener" hreflang="it">{{kitchen.file_dinner}} <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
+            <li><a href="/assets/menus/aperitivo-2026.pdf" target="_blank" rel="noopener" hreflang="it">{{kitchen.file_aperitivo}} <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
+            <li><a href="/assets/menus/carta-vini-2026.pdf" target="_blank" rel="noopener" hreflang="it">{{kitchen.file_wine}} <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
+            <li><a href="/assets/menus/allergeni-2026.pdf" target="_blank" rel="noopener" hreflang="it">{{kitchen.file_allergens}} <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a></li>
+          </ul>
+          <p class="menu-files__note">{{kitchen.files_note}}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="evening tone-ink" id="sera" aria-labelledby="eveningTitle">
+      <div class="wrap evening__grid">
+        <figure class="evening__main frame">
+          <img src="/assets/MARE_140721_285-600x720.jpg" width="600" height="720" alt="{{evening.img_main}}" loading="lazy" decoding="async">
+        </figure>
+        <div class="evening__copy">
+          <p class="sec-index">{{evening.index}}</p>
+          <h2 id="eveningTitle" data-search data-search-section="{{sections.evening}}">{{evening.title}}</h2>
+          <p>{{evening.text}}</p>
+          <a class="btn btn--light" href="#prenota" data-open-booking data-service="cena"><span class="btn__label">{{evening.cta}}</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+        <figure class="evening__wide frame">
+          <img src="/assets/MG_5615-374x249.jpg" width="374" height="249" alt="{{evening.img_wide}}" loading="lazy" decoding="async">
+        </figure>
+        <figure class="evening__tall frame">
+          <img src="/assets/IMG_1624-2-374x561.jpg" width="374" height="561" alt="{{evening.img_tall}}" loading="lazy" decoding="async">
+        </figure>
+        <div class="evening__events" data-search data-search-section="{{sections.evening}}">
+          <h3>{{evening.events_title}}</h3>
+          <p>{{evening.events_text}}</p>
+          <a class="link-arrow link-arrow--light" href="mailto:info@mareconlaccento.it?subject={{evening.mail_subject}}">info@mareconlaccento.it <svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></a>
+        </div>
+        <figure class="evening__small frame">
+          <img src="/assets/Foto_240-3-374x250.jpg" width="374" height="250" alt="{{evening.img_small}}" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </section>
+
+    <section class="cta tone-shore" id="prenota" aria-labelledby="ctaTitle">
+      <div class="wrap cta__grid">
+        <p class="sec-index">{{cta.index}}</p>
+        <h2 class="cta__title" id="ctaTitle" data-search data-search-section="{{sections.book}}">{{cta.title}}</h2>
+        <div class="cta__side">
+          <p>{{cta.text}}</p>
+          <a class="btn btn--solid" href="#prenota" data-open-booking><span class="btn__label">{{nav.book_table}}</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <p class="cta__alt">{{cta.alt}} <a href="tel:+393331059588">333 105 9588</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq tone-sand" id="faq" aria-labelledby="faqTitle">
+      <div class="wrap faq__grid">
+        <header class="faq__head">
+          <p class="sec-index">{{faq.index}}</p>
+          <h2 id="faqTitle">{{faq.title}}</h2>
+          <p>{{faq.intro_before}} <button class="inline-link" type="button" data-open-search>{{faq.intro_search}}</button> {{faq.intro_after}}</p>
+        </header>
+        <div class="faq__list">
+          <details class="faq__item" data-search data-search-section="{{sections.faq}}">
+            <summary>{{faq.q1}}<span class="faq__sign" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>{{faq.a1}}</p></div>
+          </details>
+          <details class="faq__item" data-search data-search-section="{{sections.faq}}">
+            <summary>{{faq.q2}}<span class="faq__sign" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>{{faq.a2}}</p></div>
+          </details>
+          <details class="faq__item" data-search data-search-section="{{sections.faq}}">
+            <summary>{{faq.q3}}<span class="faq__sign" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>{{faq.a3}}</p></div>
+          </details>
+          <details class="faq__item" data-search data-search-section="{{sections.faq}}">
+            <summary>{{faq.q4}}<span class="faq__sign" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>{{faq.a4}}</p></div>
+          </details>
+          <details class="faq__item" data-search data-search-section="{{sections.faq}}">
+            <summary>{{faq.q5}}<span class="faq__sign" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>{{faq.a5}}</p></div>
+          </details>
+          <details class="faq__item" data-search data-search-section="{{sections.faq}}">
+            <summary>{{faq.q6}}<span class="faq__sign" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>{{faq.a6}}</p></div>
+          </details>
+          <details class="faq__item" data-search data-search-section="{{sections.faq}}">
+            <summary>{{faq.q7}}<span class="faq__sign" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>{{faq.a7}}</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact tone-mist" id="contatti" aria-labelledby="contactTitle">
+      <div class="wrap contact__grid">
+        <header class="contact__head">
+          <p class="sec-index">{{contact.index}}</p>
+          <h2 id="contactTitle" data-search data-search-section="{{sections.contacts}}">Molo di Levante 74.</h2>
+          <p>{{contact.sub}}</p>
+        </header>
+        <div class="contact__cards">
+          <div class="contact__item">
+            <p class="contact__label">{{contact.address}}</p>
+            <p class="contact__value">Molo di Levante 74, 47042 Cesenatico (FC)</p>
+            <div class="contact__actions">
+              <button class="copy-btn" type="button" data-copy="Bagno Marè, Molo di Levante 74, 47042 Cesenatico (FC)"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>{{ui.copy}}</span></button>
+              <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&amp;query=Bagno%20Mar%C3%A8%20Molo%20di%20Levante%2074%20Cesenatico" target="_blank" rel="noopener">{{contact.directions}} <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <p class="contact__label">{{contact.email}}</p>
+            <p class="contact__value">info@mareconlaccento.it</p>
+            <div class="contact__actions">
+              <button class="copy-btn" type="button" data-copy="info@mareconlaccento.it"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>{{ui.copy}}</span></button>
+              <a class="link-arrow" href="mailto:info@mareconlaccento.it">{{contact.write}} <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <p class="contact__label">{{contact.phone}}</p>
+            <p class="contact__value">+39 333 105 9588</p>
+            <div class="contact__actions">
+              <button class="copy-btn" type="button" data-copy="+39 333 105 9588"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>{{ui.copy}}</span></button>
+              <a class="link-arrow" href="tel:+393331059588">{{contact.call}} <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hours" id="orari" aria-labelledby="hoursTitle" data-search data-search-section="{{sections.contacts}}">
+          <h3 id="hoursTitle">{{hours.title}}</h3>
+          <table class="hours__table">
+            <caption class="sr-only">{{hours.caption}}</caption>
+            <tbody id="hoursBody">
+              <tr data-hours-row="spiaggia"><th scope="row">{{hours.spiaggia}}</th><td>8:00–18:00</td></tr>
+              <tr data-hours-row="colazione"><th scope="row">{{hours.colazione}}</th><td>8:30–12:00</td></tr>
+              <tr data-hours-row="pranzo"><th scope="row">{{hours.pranzo}}</th><td>12:30–14:30</td></tr>
+              <tr data-hours-row="aperitivo"><th scope="row">{{hours.aperitivo}}</th><td>18:30–20:00</td></tr>
+              <tr data-hours-row="cena"><th scope="row">{{hours.cena}}</th><td>19:30–23:00</td></tr>
+            </tbody>
+          </table>
+          <ul class="hours__notes" id="hoursNotes"><li>{{hours.fallback}}</li></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer tone-ink">
+    <div class="wrap site-footer__grid">
+      <p class="site-footer__word" aria-hidden="true">Marè</p>
+      <div class="site-footer__col">
+        <p class="site-footer__label">Bagno Marè</p>
+        <p>Molo di Levante 74<br>47042 Cesenatico (FC)</p>
+      </div>
+      <nav class="site-footer__col" aria-label="{{a11y.footer_nav}}">
+        <p class="site-footer__label">{{footer.site}}</p>
+        <a href="#spiaggia">{{nav.beach}}</a>
+        <a href="#cucina">{{nav.kitchen}}</a>
+        <a href="#prenota" data-open-booking>{{nav.book}}</a>
+        <a href="{{prefix}}privacy.html">{{footer.privacy}}</a>
+        <a href="/admin.html" hreflang="it">{{footer.admin}}</a>
+      </nav>
+      <div class="site-footer__base">
+        <p>© <span id="year">2026</span> Bagno Marè · Cesenatico</p>
+        <p>{{footer.updated}} <time datetime="2026-10-02">{{footer.updated_date}}</time></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fab-stack">
+    <button class="fab fab--top" type="button" id="toTop" aria-label="{{a11y.to_top}}"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg></button>
+    <button class="fab fab--contact" type="button" popovertarget="contactPop" aria-label="{{a11y.quick_contacts}}"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><span class="fab__label">{{nav.contacts}}</span></button>
+  </div>
+  <div class="contact-pop" id="contactPop" popover>
+    <p class="contact-pop__title">{{fab.title}}</p>
+    <a class="contact-pop__row" href="tel:+393331059588"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span><strong>{{contact.call}}</strong><small>333 105 9588</small></span></a>
+    <a class="contact-pop__row" href="mailto:info@mareconlaccento.it"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span><strong>{{contact.write}}</strong><small>info@mareconlaccento.it</small></span></a>
+    <a class="contact-pop__row" href="https://www.google.com/maps/search/?api=1&amp;query=Bagno%20Mar%C3%A8%20Molo%20di%20Levante%2074%20Cesenatico" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span><strong>{{contact.directions}}</strong><small>Molo di Levante 74</small></span></a>
+    <button class="btn btn--solid btn--block" type="button" data-open-booking><span class="btn__label">{{nav.book_table}}</span></button>
+  </div>
+
+  <dialog class="mnav" id="mobileNav" aria-label="{{a11y.menu}}">
+    <div class="mnav__top">
+      <span class="wordmark">Marè<span class="wordmark__place">Cesenatico</span></span>
+      <button class="tool-btn tool-btn--icon" type="button" data-close aria-label="{{a11y.close_menu}}"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <nav class="mnav__links" aria-label="{{a11y.mobile_nav}}">
+      <a href="#posto"><span>01</span>{{nav.place}}</a>
+      <a href="#spiaggia"><span>02</span>{{nav.beach}}</a>
+      <a href="#cucina"><span>03</span>{{nav.kitchen}}</a>
+      <a href="#sera"><span>04</span>{{nav.evening}}</a>
+      <a href="#faq"><span>05</span>{{nav.info}}</a>
+      <a href="#contatti"><span>06</span>{{nav.contacts}}</a>
+    </nav>
+    <div class="mnav__foot">
+      <button class="btn btn--solid btn--block" type="button" data-open-booking><span class="btn__label">{{nav.book_table}}</span></button>
+      <button class="btn btn--outline btn--block" type="button" data-open-search><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><span class="btn__label">{{nav.search_site}}</span></button>
+      <div class="mnav__langs">
+{{{lang_switch}}}
+      </div>
+      <p>Molo di Levante 74 · Cesenatico</p>
+    </div>
+  </dialog>
+
+  <dialog class="search" id="searchDialog" aria-labelledby="searchLabel">
+    <div class="search__box">
+      <div class="search__field">
+        <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+        <label class="sr-only" id="searchLabel" for="searchInput">{{nav.search_site}}</label>
+        <input id="searchInput" type="search" placeholder="{{search.placeholder}}" autocomplete="off" spellcheck="false" aria-describedby="searchStatus" aria-controls="searchResults">
+        <button class="search__esc" type="button" data-close><kbd>Esc</kbd><span class="sr-only">{{a11y.close_search}}</span></button>
+      </div>
+      <p class="search__status" id="searchStatus" aria-live="polite">{{search.suggestions}}</p>
+      <ul class="search__results" id="searchResults"></ul>
+    </div>
+  </dialog>
+
+  <dialog class="drawer" id="bookingDrawer" aria-labelledby="drawerTitle">
+    <div class="drawer__panel">
+      <header class="drawer__head">
+        <div>
+          <p class="drawer__kicker">{{booking.kicker}}</p>
+          <h2 id="drawerTitle">{{nav.book_table}}</h2>
+        </div>
+        <button class="tool-btn tool-btn--icon" type="button" data-close aria-label="{{a11y.close_booking}}"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+      </header>
+
+      <div class="drawer__body" id="drawerBody">
+        <form class="booking" id="bookingForm" novalidate>
+          <fieldset class="step">
+            <legend class="step__label"><span>01</span>{{booking.service}}</legend>
+            <div class="segmented">
+              <label class="segmented__opt"><input type="radio" name="service" value="pranzo" checked><span><strong>{{booking.lunch}}</strong><small data-service-from="pranzo">{{booking.from_lunch}}</small></span></label>
+              <label class="segmented__opt"><input type="radio" name="service" value="cena"><span><strong>{{booking.dinner}}</strong><small data-service-from="cena">{{booking.from_dinner}}</small></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="step" aria-describedby="dateError">
+            <legend class="step__label"><span>02</span>{{booking.day}}</legend>
+            <div class="calendar" id="calendar">
+              <div class="calendar__head">
+                <button class="calendar__nav" type="button" id="calPrev" aria-label="{{a11y.prev_month}}"><svg class="icon" aria-hidden="true"><use href="#i-prev"/></svg></button>
+                <p class="calendar__month" id="calMonth" aria-live="polite"></p>
+                <button class="calendar__nav" type="button" id="calNext" aria-label="{{a11y.next_month}}"><svg class="icon" aria-hidden="true"><use href="#i-next"/></svg></button>
+              </div>
+              <table class="calendar__grid" role="grid" aria-labelledby="calMonth">
+                <thead><tr><th scope="col" abbr="{{booking.wd1}}">{{booking.wd1_short}}</th><th scope="col" abbr="{{booking.wd2}}">{{booking.wd2_short}}</th><th scope="col" abbr="{{booking.wd3}}">{{booking.wd3_short}}</th><th scope="col" abbr="{{booking.wd4}}">{{booking.wd4_short}}</th><th scope="col" abbr="{{booking.wd5}}">{{booking.wd5_short}}</th><th scope="col" abbr="{{booking.wd6}}">{{booking.wd6_short}}</th><th scope="col" abbr="{{booking.wd7}}">{{booking.wd7_short}}</th></tr></thead>
+                <tbody id="calBody"></tbody>
+              </table>
+            </div>
+            <p class="field-error" id="dateError" hidden></p>
+          </fieldset>
+
+          <fieldset class="step">
+            <legend class="step__label"><span>03</span>{{booking.guests}}</legend>
+            <div class="stepper">
+              <button class="stepper__btn" type="button" data-step="-1" aria-label="{{a11y.guests_less}}"><svg class="icon" aria-hidden="true"><use href="#i-minus"/></svg></button>
+              <input class="stepper__value" id="bookingGuests" name="guests" type="number" inputmode="numeric" min="1" max="12" value="2" aria-label="{{a11y.guests}}" aria-describedby="guestsHint">
+              <button class="stepper__btn" type="button" data-step="1" aria-label="{{a11y.guests_more}}"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+            </div>
+            <p class="hint" id="guestsHint">{{booking.guests_hint}}</p>
+          </fieldset>
+
+          <fieldset class="step" aria-describedby="timeError">
+            <legend class="step__label"><span>04</span>{{booking.time}}</legend>
+            <div class="slots" id="timeSlots" aria-live="polite" aria-busy="false"><p class="hint">{{booking.time_hint}}</p></div>
+            <p class="field-error" id="timeError" hidden></p>
+          </fieldset>
+
+          <div class="step">
+            <label class="step__label" for="bookingNotes"><span>05</span>{{booking.notes}} <small>{{booking.notes_optional}}</small></label>
+            <textarea class="input" id="bookingNotes" name="notes" rows="3" maxlength="500" placeholder="{{booking.notes_placeholder}}" aria-describedby="notesCount"></textarea>
+            <p class="hint hint--right" id="notesCount">0 / 500</p>
+          </div>
+
+          <fieldset class="step">
+            <legend class="step__label"><span>06</span>{{booking.contact}}</legend>
+            <div class="field">
+              <label for="bookingName">{{booking.name}}</label>
+              <input class="input" id="bookingName" name="name" type="text" autocomplete="name" maxlength="80" required aria-describedby="nameError">
+              <p class="field-error" id="nameError" hidden></p>
+            </div>
+            <div class="field">
+              <label for="bookingPhone">{{booking.phone}}</label>
+              <input class="input" id="bookingPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="24" required aria-describedby="phoneError phoneHint">
+              <p class="hint" id="phoneHint">{{booking.phone_hint}}</p>
+              <p class="field-error" id="phoneError" hidden></p>
+            </div>
+            <div class="field">
+              <label for="bookingEmail">{{booking.email}} <small>{{booking.optional}}</small></label>
+              <input class="input" id="bookingEmail" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" spellcheck="false" aria-describedby="emailError emailHint">
+              <p class="hint" id="emailHint">{{booking.email_hint}}</p>
+              <p class="field-error" id="emailError" hidden></p>
+            </div>
+            <label class="check">
+              <input type="checkbox" id="bookingConsent" name="consent">
+              <span class="check__box" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>
+              <span class="check__text">{{booking.consent}} <a href="{{prefix}}privacy.html" target="_blank" rel="noopener">{{booking.privacy_link}}</a></span>
+            </label>
+          </fieldset>
+
+          <div class="honeypot" aria-hidden="true"><label for="bookingWebsite">Website</label><input id="bookingWebsite" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <div class="form-alert" id="formAlert" role="alert" hidden></div>
+        </form>
+
+        <section class="success" id="bookingSuccess" hidden tabindex="-1" aria-labelledby="successTitle">
+          <svg class="success__mark" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24"/><path d="m15.5 26.5 7 7 14-15"/></svg>
+          <p class="drawer__kicker">{{booking.sent}}</p>
+          <h3 id="successTitle">{{booking.success_title}}</h3>
+          <dl class="success__recap" id="successRecap"></dl>
+          <div class="ref">
+            <span class="ref__label">{{booking.code}}</span>
+            <strong class="ref__code" id="successRef">MARE-000000</strong>
+            <button class="copy-btn" type="button" data-copy-from="#successRef"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>{{ui.copy}}</span></button>
+          </div>
+          <p class="hint" id="successNote"></p>
+          <div class="success__actions">
+            <button class="btn btn--outline" type="button" id="addToCalendar"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg><span class="btn__label">{{booking.add_calendar}}</span></button>
+            <button class="btn btn--outline" type="button" id="printBooking"><svg class="icon" aria-hidden="true"><use href="#i-print"/></svg><span class="btn__label">{{booking.print}}</span></button>
+          </div>
+          <button class="inline-link" type="button" id="newBooking">{{booking.new}}</button>
+        </section>
+      </div>
+
+      <footer class="drawer__foot" id="drawerFoot">
+        <p class="drawer__summary" id="bookingSummary" aria-live="polite">{{booking.summary_default}}</p>
+        <button class="btn btn--solid btn--block" type="submit" form="bookingForm" id="bookingSubmit"><span class="btn__label">{{booking.submit}}</span><span class="spinner" aria-hidden="true"></span></button>
+      </footer>
+    </div>
+  </dialog>
+
+  <aside class="lang-hint" id="langHint" hidden aria-live="polite">
+    <p id="langHintText"></p>
+    <a class="link-arrow" id="langHintLink" href="/"></a>
+    <button class="tool-btn tool-btn--icon" type="button" id="langHintClose"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg><span class="sr-only" id="langHintCloseLabel"></span></button>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
